@@ -20,3 +20,6 @@ wp-config.php
 
 # htaccess
 /.htaccess
+
+# Theme files and folders
+/wp-content/themes/gli/node_modules
