@@ -1,14 +1,14 @@
 // Mixin
-@mixin font-face( $font-name, $font-path, $font-weight: 400, $font-style: normal){
+@mixin font-face($font-name, $font-path, $font-weight: 400, $font-style: normal) {
 	@font-face {
 		font-family: $font-name;
-		font-style : $font-style;
+		font-style: $font-style;
 		font-weight: $font-weight;
 		src: url('#{$font-path}.eot');
 		src: url('#{$font-path}.eot?#iefix') format('embedded-opentype'),
-			url('#{$font-path}.woff2') format('woff2'),
-			url('#{$font-path}.woff') format('woff'),
-			url('#{$font-path}.ttf') format('truetype');
+		url('#{$font-path}.woff2') format('woff2'),
+		url('#{$font-path}.woff') format('woff'),
+		url('#{$font-path}.ttf') format('truetype');
 	}
 }
 
@@ -22,11 +22,11 @@
 //icomoon
 @font-face {
 	font-family: 'icomoon';
-	src:  url('#{$font-path}/icomoon.eot?b58jtw');
-	src:  url('#{$font-path}/icomoon.eot?b58jtw#iefix') format('embedded-opentype'),
-	  url('#{$font-path}/icomoon.ttf?b58jtw') format('truetype'),
-	  url('#{$font-path}/icomoon.woff?b58jtw') format('woff'),
-	  url('#{$font-path}/icomoon.svg?b58jtw#icomoon') format('svg');
+	src:  url('#{$font-path}/icomoon.eot?vquhq0');
+	src:  url('#{$font-path}/icomoon.eot?vquhq0#iefix') format('embedded-opentype'),
+	  url('#{$font-path}/icomoon.ttf?vquhq0') format('truetype'),
+	  url('#{$font-path}/icomoon.woff?vquhq0') format('woff'),
+	  url('#{$font-path}/icomoon.svg?vquhq0#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -47,64 +47,79 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-heart:before {
-	content: "\e90d";
-  }
-  .icon-give:before {
-	content: "\e90e";
-  }
-  .icon-down-arrow:before {
-	content: "\e907";
-  }
-  .icon-purpose:before {
-	content: "\e908";
-  }
-  .icon-vision:before {
-	content: "\e90a";
-  }
-  .icon-values:before {
-	content: "\e90b";
-  }
-  .icon-donate:before {
-	content: "\e90c";
-  }
-  .icon-Play-Icon:before {
-	content: "\e901";
-  }
-  .icon-pinterest:before {
-	content: "\e902";
-  }
-  .icon-twitter:before {
-	content: "\e903";
-  }
-  .icon-google:before {
-	content: "\e904";
-  }
-  .icon-facebook:before {
-	content: "\e905";
-  }
-  .icon-instagram:before {
-	content: "\e906";
-  }
-  .icon-calander:before {
-	content: "\e909";
-  }
-  .icon-pin:before {
-	content: "\e926";
-  }
-  .icon-doc:before {
-	content: "\e92a";
-  }
-  .icon-mesage:before {
-	content: "\e92b";
-  }
-  .icon-phone-call:before {
+  .icon-play:before {
 	content: "\e900";
   }
-  .icon-clock:before {
-	content: "\e954";
+  .icon-arrow-left-line:before {
+	content: "\e901";
   }
-  .icon-youtube:before {
-	content: "\eaa3";
+  .icon-arrow-down-line:before {
+	content: "\e902";
+  }
+  .icon-arrow-right-line:before {
+	content: "\e903";
+  }
+  .icon-caret:before {
+	content: "\e904";
+  }
+  .icon-caret-right:before {
+	content: "\e905";
+  }
+  .icon-caret-down:before {
+	content: "\e906";
+  }
+  .icon-check:before {
+	content: "\e907";
+  }
+  .icon-chevron-left:before {
+	content: "\e908";
+  }
+  .icon-chevron-down:before {
+	content: "\e909";
+  }
+  .icon-chevron-right:before {
+	content: "\e90a";
+  }
+  .icon-plus:before {
+	content: "\e90b";
+  }
+  .icon-line:before {
+	content: "\e90c";
+  }
+  .icon-search:before {
+	content: "\e90d";
+  }
+  .icon-circle-cross:before {
+	content: "\e90e";
+  }
+  .icon-star:before {
+	content: "\e90f";
+  }
+  .icon-envelope:before {
+	content: "\e910";
+  }
+  .icon-facebook:before {
+	content: "\e911";
+  }
+  .icon-messenger:before {
+	content: "\e912";
+  }
+  .icon-instagram:before {
+	content: "\e913";
+  }
+  .icon-pinterest:before {
+	content: "\e914";
+  }
+  .icon-linkedin:before {
+	content: "\e915";
+  }
+  .icon-twitter:before {
+	content: "\e916";
+  }
+  .icon-pin:before {
+	content: "\e917";
+  }
+  .icon-call:before {
+	content: "\e918";
   }
   

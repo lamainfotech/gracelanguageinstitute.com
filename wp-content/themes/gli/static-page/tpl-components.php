@@ -11,7 +11,7 @@ get_header();
         <h4>Heading 4 (26px)</h4>
         <h5>Heading 5 (24px)</h5>
         <h6>Heading 6 (18px)</h6>
-        <i class="icon-search"></i>
+        <i class="icon-play"></i>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat assumenda laborum ea velit, vitae porro animi, reiciendis laboriosam tempora tenetur provident esse nemo quasi inventore cupiditate eos quae iusto accusantium!</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat assumenda laborum ea velit, vitae porro animi, reiciendis laboriosam tempora tenetur provident esse nemo quasi inventore cupiditate eos quae iusto accusantium!</p>
         <div>
