@@ -24,18 +24,34 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <?php
+                    ?>
+                    <a class="navbar-brand" href="#"><img src="/wp-content/uploads/2023/04/GLI-logo.png" alt="Grace Language Institute"></a>
+                    <div class="collapse navbar-collapse offset" id="nav-pri">
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location'  => 'primary',
+                            'depth'              => 3, // 1 = no dropdowns, 2 = with dropdowns.
+                            'container'       => 'div',
+                            'menu_class'      => 'nav navbar-nav justify-content-center ml-auto',
+                            // 'walker'         => new WP_Bootstrap_NavWalker(),
+                            // 'fallback_cb'    => 'WP_Bootstrap_NavWalker::fallback',
+                        ));
+                        ?>
+                    </div>
+                    <div class="site-header__actions">
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#nav-pri" aria-controls="nav-pri" aria-expanded="false" aria-label="Toggle Navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <a href="#" class="btn btn-primary d-none d-xl-block">Contact Us</a>
+                    </div>
+            </nav>
+        </header>
 
-    <header>
-        <nav>
-            <?php
-            wp_nav_menu(array(
-                'theme_location'  => 'primary',
-                'depth'              => 3, // 1 = no dropdowns, 2 = with dropdowns.
-                'container'       => 'div',
-                'menu_class'      => 'nav navbar-nav',
-                // 'walker'         => new WP_Bootstrap_NavWalker(),
-                // 'fallback_cb'    => 'WP_Bootstrap_NavWalker::fallback',
-            ));
-            ?>
-        </nav>
-    </header>
+        <main class="site-content">
