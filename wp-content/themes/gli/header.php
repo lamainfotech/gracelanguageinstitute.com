@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package gracelanguageinstitute
  */
@@ -20,3 +21,18 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+    <header>
+        <nav>
+            <?php
+            wp_nav_menu(array(
+                'theme_location'  => 'primary',
+                'depth'              => 3, // 1 = no dropdowns, 2 = with dropdowns.
+                'container'       => 'div',
+                'menu_class'      => 'nav navbar-nav',
+                // 'walker'         => new WP_Bootstrap_NavWalker(),
+                // 'fallback_cb'    => 'WP_Bootstrap_NavWalker::fallback',
+            ));
+            ?>
+        </nav>
+    </header>
