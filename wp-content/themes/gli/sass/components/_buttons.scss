@@ -1,0 +1,185 @@
+// Buttons
+
+@mixin btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 3.125rem;
+    border: 0;
+    padding: 0.6875rem 1.5625rem;
+    @include font-size(0.9375rem);
+    transition: all .2s;
+    min-width: 8.75rem;
+    text-transform: capitalize;
+    background-color: $gray-700;
+    color: $white;
+
+    @include media-breakpoint-up(xl) {
+        padding: 0.8125rem 1.875rem;
+    }
+
+    &:focus,
+    &:hover {
+        outline: none;
+        box-shadow: 0 10px 20px rgba($black, .2);
+        transform: translateY(-0.1875rem);
+        color: $white;
+    }
+}
+
+@mixin btnPrimary {
+    background-color: $primary;
+    box-shadow: 3px 3px 10px rgba($primary, 0.5);
+
+    &:hover {
+        box-shadow: 6px 6px 12px rgba($primary, 0.6);
+    }
+}
+
+@mixin btnSecondary {
+    background-color: $secondary;
+}
+
+@mixin btnTransparent {
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    color: $primary;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+@mixin btnMd {
+    min-width: 8.75rem;
+
+    @include media-breakpoint-up(sm) {
+        min-width: 10rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-width: 12.1875rem;
+    }
+}
+
+@mixin btnLg {
+
+    @include media-breakpoint-up(sm) {
+        min-width: 7.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-width: 11.25rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        min-width: 14.0625rem;
+    }
+}
+
+@mixin btnXl {
+
+    @include media-breakpoint-up(xxl) {
+        min-width: 17rem;
+    }
+}
+
+@mixin btnIcon {
+    background-color: transparent;
+    min-width: auto;
+    padding: 0;
+    color: $primary;
+    text-decoration: underline;
+    position: relative;
+    padding-right: 1.0625rem;
+    box-shadow: none !important;
+    transform: none !important;
+
+    i {
+        position: absolute;
+        right: 0.25rem;
+        top: 0.5625rem;
+        @include font-size(0.5rem);
+        transition: all .2s;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+
+        i {
+            right: 0;
+        }
+    }
+
+    &.btn-link {
+        text-decoration: none;
+        @include font-size(0.9375rem);
+        font-weight: 400;
+        line-height: 1;
+        display: inline-block;
+
+        i {
+            top: 5px;
+            transition: .2s all ease-in-out;
+            right: 1rem;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $primary;
+
+            i {
+                right: 0.25rem;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+@mixin btnLink {
+    &-link {
+        @include media-breakpoint-up(xl) {
+            @include font-size(1.25rem);
+            letter-spacing: 0.005rem;
+        }
+    }
+}
+
+.btn {
+    @include btn;
+
+    &.btn-primary {
+        @include btnPrimary;
+    }
+
+    &.btn-secondary {
+        @include btnSecondary;
+    }
+
+    &.btn-transparent {
+        @include btnTransparent;
+    }
+
+    &.btn-lg {
+        @include btnLg;
+    }
+
+    &.btn-xl {
+        @include btnXl;
+    }
+
+    &.btn-md {
+        @include btnMd;
+    }
+
+    &.btn-icon {
+        @include btnIcon;
+    }
+
+    &.btn-link {
+        @include btnLink;
+    }
+}

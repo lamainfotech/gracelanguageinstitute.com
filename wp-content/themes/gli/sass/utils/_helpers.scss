@@ -29,19 +29,13 @@ img {
 }
 
 // Fonts
-// %font-roboto {
-//     font-family: $font-roboto;
-// }
-// .font-roboto {
-//     @extend %font-roboto;
-// }
+%font-montserrat {
+	font-family: $font-montserrat;
+}
 
-// %font-open-sans {
-//     font-family: $font-open-sans;
-// }
-// .font-open-sans {
-//     @extend %font-open-sans;
-// }
+.font-montserrat {
+	@extend %font-montserrat;
+}
 
 // Visibility
 .hide-sm {
@@ -73,11 +67,6 @@ ol {
 		font-weight: $i*100;
 	}
 }
-
-// a:visited {
-// 	color: $primary;
-// }
-
 
 .block {
 	&-width {
@@ -238,7 +227,6 @@ ol {
 	}
 }
 
-
 .overlay {
 	position: relative;
 	z-index: 1;
@@ -303,10 +291,15 @@ ol {
 	}
 }
 
+// hidden-title
+.hidden-title {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+}
+
 .bg-gray {
-
 	background-color: $gray-500;
-
 }
 
 .gutter-72 {
