@@ -30,7 +30,7 @@
                 <div class="container">
                     <?php
                     ?>
-                    <a class="navbar-brand" href="#"><img src="/wp-content/uploads/GLI-logo.png" alt="Grace Language Institute" height="160" width="160" loading="lazy"></a>
+                    <a class="navbar-brand" href="#"><img src="/wp-content/uploads/GLI-logo.png" alt="Grace Language Institute" height="135" width="135" loading="lazy"></a>
                     <?php
                     wp_nav_menu(array(
                         'theme_location'  => 'primary',
@@ -60,8 +60,8 @@
             <section class="banner bg-cover">
                 <img src="<?php echo site_url(); ?>/wp-content/uploads/guy-learning.jpg" alt="Banner">
                 <div class="container">
-                    <div class="banner-content">
-                        <h1>Learning A Language is Easier!</h1>
+                    <div class="banner-content block-width-55">
+                        <h1>Learning A <br> Language is Easier!</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <a href="#" class="btn btn-secondary btn-play">Play Video</a>
                     </div>
