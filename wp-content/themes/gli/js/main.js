@@ -58,9 +58,24 @@ var ss;
 					header.removeClass("sticky");
 				}
 			}
+
+			stickyHeader();
+
+			function paddingEl() {
+				var header = $(".site-header");
+				var headerHeight = header.innerHeight();
+				var paddingElm = $(".banner-content, .banner--inner");
+				paddingElm.css("padding-top", headerHeight);
+			}
+
+			paddingEl();
+
+			setInterval(function () {
+				paddingEl();
+			}, 100);
+			
 			jQuery(window).resize(stickyHeader);
 			jQuery(window).scroll(stickyHeader);
-			stickyHeader();
 
 			//site-content padding
 			// function siteContentPadding(){

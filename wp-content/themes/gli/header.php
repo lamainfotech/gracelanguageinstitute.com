@@ -30,28 +30,40 @@
                 <div class="container">
                     <?php
                     ?>
-                    <a class="navbar-brand" href="#"><img src="/wp-content/uploads/2023/04/GLI-logo.png" alt="Grace Language Institute"></a>
-                    <div class="collapse navbar-collapse offset" id="nav-pri">
-                        <?php
-                        wp_nav_menu(array(
-                            'theme_location'  => 'primary',
-                            'depth'              => 3, // 1 = no dropdowns, 2 = with dropdowns.
-                            'container'       => 'div',
-                            'menu_class'      => 'nav navbar-nav justify-content-center ml-auto',
-                            // 'walker'         => new WP_Bootstrap_NavWalker(),
-                            // 'fallback_cb'    => 'WP_Bootstrap_NavWalker::fallback',
-                        ));
-                        ?>
-                    </div>
+                    <a class="navbar-brand" href="#"><img src="/wp-content/uploads/2023/04/GLI-logo.png" alt="Grace Language Institute" height="160" width="160" loading="lazy"></a>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location'  => 'primary',
+                        'depth'              => 3, // 1 = no dropdowns, 2 = with dropdowns.
+                        'container'       => 'div',
+                        'container_class' => 'collapse navbar-collapse offset',
+                        'container_id'    => 'nav-pri',
+                        'menu_class'      => 'nav navbar-nav justify-content-center ml-auto',
+                        'walker'         => new WP_Bootstrap_NavWalker(),
+                        // 'fallback_cb'    => 'WP_Bootstrap_NavWalker::fallback',
+                    ));
+                    ?>
+
                     <div class="site-header__actions">
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#nav-pri" aria-controls="nav-pri" aria-expanded="false" aria-label="Toggle Navigation">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
-                        <a href="#" class="btn btn-primary d-none d-xl-block">Contact Us</a>
+                        <a href="tel:9825495869" class="btn btn-primary btn-call d-none d-lg-block">982-5495869</a>
+                        <a href="tel:9825495869" class="btn btn-primary d-block d-lg-none"><i class="icon-call"></i></a>
                     </div>
             </nav>
         </header>
 
         <main class="site-content">
+            <section class="banner bg-cover">
+                <img src="<?php echo site_url(); ?>/wp-content/uploads/guy-learning.jpg" alt="Banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Learning A Language is Easier!</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn btn-secondary btn-play">Play Video</a>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- /.banner -->

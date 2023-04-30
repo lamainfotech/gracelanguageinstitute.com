@@ -14,30 +14,11 @@ get_header();
         <i class="icon-play"></i>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat assumenda laborum ea velit, vitae porro animi, reiciendis laboriosam tempora tenetur provident esse nemo quasi inventore cupiditate eos quae iusto accusantium!</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat assumenda laborum ea velit, vitae porro animi, reiciendis laboriosam tempora tenetur provident esse nemo quasi inventore cupiditate eos quae iusto accusantium!</p>
-        <div>
-            <h3 class="my-1">.btn (default)</h3>
-            <a href="#" class="btn">Button</a>
-        </div>
-        <div>
-            <h3 class="my-1">.btn .btn-primary</h3>
-            <a href="#" class="btn btn-primary">Button</a>
-        </div>
-        <div>
-            <h3 class="my-1">.btn .btn-secondary</h3>
-            <a href="#" class="btn btn-secondary">Button</a>
-        </div>
-        <div>
-            <h3 class="my-1">.btn .btn-lg</h3>
-            <a href="#" class="btn btn-lg">Button</a>
-        </div>
-        <div>
-            <h3 class="my-1">.btn .btn-md</h3>
-            <a href="#" class="btn btn-md">Button</a>
-        </div>
-        <div>
-            <h3 class="my-1">.btn .btn-icon</h3>
-            <a href="#" class="btn btn-icon">Read more <i class="icon-angle-right"></i></a>
-        </div>
+        <h2>Buttons</h2>
+        <p><a href="#" class="btn btn-primary">Explore Courses</a></p>
+        <p><a href="tel:9825495869" class="btn btn-primary btn-call">982-5495869</a></p>
+        <p><a href="#" class="btn btn-secondary">View All Reviews</a></p>
+        <p><a href="#" class="btn btn-secondary btn-play">Play Video</a></p>  
         <hr>
         <hr>
     </div><!-- /.container -->

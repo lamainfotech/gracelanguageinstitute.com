@@ -32,8 +32,8 @@ add_action( 'after_setup_theme', 'gli_register_nav_menu' );
 /**
  * Load Custom Nav Walker.
  */
-// if (!file_exists(get_template_directory() . '/inc/bootstrap-navwalker.php')) {
-//     wp_die('<div style="text-align:center"><h1 style="font-weight:normal">Custom Walker Nav Not Found</h1><p>Opps we have got error!<br>It appears the bootstrap-navwalker.php file may be missing.</p></div>', 'Custom Walker Nav Not Found');
-// } else {
-//     require_once get_template_directory() . '/inc/bootstrap-navwalker.php';
-// }
+if (!file_exists(get_template_directory() . '/inc/bootstrap-navwalker.php')) {
+    wp_die('<div style="text-align:center"><h1 style="font-weight:normal">Custom Walker Nav Not Found</h1><p>Opps we have got error!<br>It appears the bootstrap-navwalker.php file may be missing.</p></div>', 'Custom Walker Nav Not Found');
+} else {
+    require_once get_template_directory() . '/inc/bootstrap-navwalker.php';
+}
