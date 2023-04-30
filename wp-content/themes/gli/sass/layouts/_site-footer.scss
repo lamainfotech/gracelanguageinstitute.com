@@ -16,3 +16,172 @@
         }
     }
 }
+
+// Site Footer
+.site-footer {
+	padding: 3rem 0 1rem;
+
+	@include media-breakpoint-up(xl) {
+		padding: 6.875rem 0 2.5rem;
+	}
+
+	&__logo {
+
+		@include media-breakpoint-down(sm) {
+			text-align: center;
+		}
+		
+		a {
+			display: inline-block;
+		}
+	}
+
+	&__item {
+		color: $black;
+		@include font-size(0.9375rem);
+		margin-bottom: 2.5rem;
+
+		@include media-breakpoint-up(xl) {
+			@include font-size(1rem);
+		}
+
+		@include media-breakpoint-down(sm) {
+			border-bottom: 1px solid rgba($white, .5);
+			margin-bottom: 0;
+			padding: 1rem 0;
+		}
+
+		.h5 {
+			color: $black;
+			@include font-size(1.1875rem);
+			text-transform: capitalize;
+
+			@include media-breakpoint-up(md) {
+				@include font-size(1.375rem);
+			}
+
+			@include media-breakpoint-up(xl) {
+				@include font-size(1.5625rem);
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: .75rem;
+		}
+
+		a {
+			color: $black;
+			text-decoration: none;
+			font-weight: 500;
+			letter-spacing: 0;
+
+			&:hover {
+				color: $primary;
+			}
+		}
+
+		p {
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		.toggle {
+
+			&Block {
+				display: none;
+
+				@include media-breakpoint-up(md) {
+					display: block !important;
+					height: 100% !important;
+				}
+			}
+
+		}
+	}
+
+	&__social {
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 0.4375rem 0 0;
+
+			@include media-breakpoint-up(xl) {
+				margin: 0 .75rem 0 0;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			background-color: $white;
+			width: 2rem;
+			height: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			color: $primary;
+			@include font-size(0.875rem);
+
+			@include media-breakpoint-up(xl) {
+				width: 2.375rem;
+				height: 2.375rem;
+				@include font-size(1rem);
+			}
+
+			&:hover {
+				background-color: $primary;
+				color: $white;
+			}
+		}
+	}
+
+	&__location {
+
+		@include media-breakpoint-up(xxl) {
+			line-height: 2.75;
+		}
+	}
+
+	&__links {
+		padding: 0;
+
+		ul {
+			column-count: 1;
+
+			@include media-breakpoint-down(sm) {
+				column-count: auto;
+			}
+		}
+
+		li {
+			break-inside: avoid;
+		}
+	}
+
+	&__copyright {
+		@include font-size(0.9375rem);
+		color: $black;
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 1rem;
+		}
+
+		@include media-breakpoint-down(xs) {
+			@include font-size(0.8125rem);
+		}
+	}
+}

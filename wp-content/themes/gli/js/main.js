@@ -118,6 +118,7 @@ var ss;
 		misc: function () {
 			try {
 				$('[data-fix="height"]').matchHeight();
+				
 			} catch (err) {
 				console.log(err);
 			}
