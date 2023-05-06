@@ -49,7 +49,7 @@ get_header();
 
 <section class="course bg-lightGreen py-xxl-6 py-lg-4 py-sm-3 py-2">
     <div class="container">
-        <header class="block-title text-center block-width-70 mx-auto">
+        <header class="block-title text-center block-width-70 mx-auto mb-lg-3 mb-sm-2 mb-1">
             <h2>Find Your Course</h2>
             <p>GLI offers a range of language and culture courses for adults, kids and teens, businesses, and more. Choose from the options below to find your ideal course and start progressing further with us.</p>
         </header>
