@@ -64,7 +64,7 @@ var ss;
 			function paddingEl() {
 				var header = $(".site-header");
 				var headerHeight = header.innerHeight();
-				var paddingElm = $(".banner-content, .banner--inner");
+				var paddingElm = $(".banner");
 				paddingElm.css("padding-top", headerHeight);
 			}
 

@@ -51,7 +51,6 @@
                             <span></span>
                         </button>
                         <a href="tel:9825495869" class="btn btn-primary btn-call d-none d-lg-block">982-5495869</a>
-                        <a href="tel:9825495869" class="btn btn-primary d-block d-lg-none"><i class="icon-call"></i></a>
                     </div>
             </nav>
         </header>

@@ -7,9 +7,13 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 
 	// background: url(#{$image-path}/bg-body.jpg) center;
-	@include media-breakpoint-up(xl) {
+	@include media-breakpoint-up(lg) {
 		@include font-size(1.125rem);
-		line-height: 1.7;
+		line-height: 1.6;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		@include font-size(1.25rem);
 	}
 }
 

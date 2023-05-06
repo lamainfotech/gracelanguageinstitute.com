@@ -406,3 +406,20 @@ ol {
 
 	}
 }
+
+.heading {
+	&-secondary {
+		h2 {
+			font-weight: 600;
+			@include font-size(1.5rem);
+
+			@include media-breakpoint-up(sm) {
+				@include font-size(1.75rem);
+			}
+
+			@include media-breakpoint-up(lg) {
+				@include font-size(2.25rem);
+			}
+		}
+	}
+}
