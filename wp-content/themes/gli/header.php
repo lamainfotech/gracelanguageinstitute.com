@@ -30,7 +30,7 @@
                 <div class="container">
                     <?php
                     ?>
-                    <a class="navbar-brand" href="#"><img src="/wp-content/uploads/GLI-logo.png" alt="Grace Language Institute" height="135" width="135" loading="lazy"></a>
+                    <a class="navbar-brand" href="/"><img src="/wp-content/uploads/GLI-logo.png" alt="Grace Language Institute" height="135" width="135" loading="lazy"></a>
                     <?php
                     wp_nav_menu(array(
                         'theme_location'  => 'primary',

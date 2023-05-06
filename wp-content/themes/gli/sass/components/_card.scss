@@ -18,49 +18,60 @@
             padding: 2rem 1.25rem;
         }
 
+        @include media-breakpoint-down(md) {
+            border-radius: 15px;
+            background-color: $light-green-100;
+        }
+
         &:hover,
         &:focus {
             border-radius: 15px;
             background-color: $light-green-100;
 
-            img {
+            i {
+                color: $primary;
                 background-color: $white;
             }
         }
 
         &.text-center {
-            img {
+            i {
                 margin-left: auto;
                 margin-right: auto;
             }
         }
 
         &__top {
-            img {
-                color: $white;
+            color: $dark-gray-100;
+
+            i {
+                color: $dark-black;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 3.75rem;
-                height: 3.75rem;
+                width: 4rem;
+                height: 4rem;
                 padding: .75rem;
                 background-color: $white;
                 margin-bottom: 0.75rem;
                 transition: all 0.3s;
                 border-radius: 50%;
+                @include font-size(3rem);
                 box-shadow: 0px 0px 20px rgba($black, 0.15);
 
                 @include media-breakpoint-up(sm) {
-                    width: 4.5rem;
-                    height: 4.5rem;
+                    width: 5rem;
+                    height: 5rem;
                     padding: 1rem;
+                    @include font-size(3.25rem);
                     margin-bottom: 1rem;
                 }
 
                 @include media-breakpoint-up(lg) {
-                    width: 5rem;
-                    height: 5rem;
+                    width: 5.5rem;
+                    height: 5.5rem;
                     padding: 1.125rem;
+                    @include font-size(3.5rem);
                     margin-bottom: 1.25rem;
                 }
 
@@ -73,14 +84,55 @@
             }
         }
 
-        h3,
-        .h3 {
+        h4 {
             font-weight: 600;
             color: $dark-black;
 
             @include media-breakpoint-up(md) {
                 margin-bottom: 0.875rem;
             }
+        }
+    }
+
+    &-media {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        min-height: 380px;
+        position: relative;
+        z-index: 1;
+        padding: 1rem 2rem .75rem;
+        transition: all 3s ease-in-out;
+        
+        @include media-breakpoint-up(sm) {
+            padding: 1.5rem 2.5rem 1rem;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            min-height: 392px;
+            padding: 2rem 3rem 1.125rem;
+        }
+        
+        &__body {
+            color: $white;
+            transition: all .3s;
+
+            h3 {
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(180deg, rgba($black, 0) 41.07%, rgba(34, 31, 31, 0.6) 100%);
+            z-index: -1;
         }
     }
 }

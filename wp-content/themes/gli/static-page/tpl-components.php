@@ -31,15 +31,13 @@ get_header();
         </header>
         <hr>
         <hr>
-        <hr>
-        <hr>
         <h2 class="my-2 text-center"><em>[.card-icon]</em></h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="card-icon text-center">
                         <div class="card-icon__top">
-                            <img width="512" height="512" src="<?php echo site_url(); ?>/wp-content/uploads/skill.png" loading="lazy" alt="Skilled Teachers">
+                            <i class="icon-skill"></i>
                             <h4>Skilled Teachers</h4>
                             <p>Each one is a native English speaker and is certified by the New York State Education Department.</p>
                         </div>

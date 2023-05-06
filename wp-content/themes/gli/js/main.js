@@ -73,7 +73,7 @@ var ss;
 			setInterval(function () {
 				paddingEl();
 			}, 100);
-			
+
 			jQuery(window).resize(stickyHeader);
 			jQuery(window).scroll(stickyHeader);
 
@@ -118,13 +118,92 @@ var ss;
 		misc: function () {
 			try {
 				$('[data-fix="height"]').matchHeight();
-				
+
 			} catch (err) {
 				console.log(err);
 			}
 		},
 		slider: function () {
+			// slider-col-1
+			$(".slider-col-1").slick({
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: true,
+				speed: 800,
+				fade: false,
+			});
 
+			// slider-col-2
+			$(".slider-col-2").slick({
+				dots: true,
+				infinite: false,
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				speed: 800,
+				responsive: [{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						adaptiveHeight: true,
+					},
+				},],
+			});
+
+			// slider-col-3
+			$(".slider-col-3").slick({
+				dots: true,
+				infinite: false,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				speed: 800,
+				responsive: [{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						adaptiveHeight: true,
+					},
+				},
+				],
+			});
+
+			// slider-col-4
+			$(".slider-col-4").slick({
+				dots: true,
+				infinite: false,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				speed: 800,
+				responsive: [{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+					},
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						adaptiveHeight: true,
+					},
+				},
+				],
+			});
 		},
 		gallery: function () {
 			try {
