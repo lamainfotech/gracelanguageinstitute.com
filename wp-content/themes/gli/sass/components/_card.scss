@@ -143,4 +143,150 @@
             }
         }
     }
+
+    &-blog {
+        height: 100%;
+        border-width: 0;
+        background: $white;
+        display: flex !important;
+        border-color: transparent;
+        border-radius: .5rem;
+        transition: all .3s ease-in-out;
+
+        &__body {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__content {
+            display: flex;
+            flex: 1 0 0%;
+            flex-direction: column;
+            color: $gray-700;
+            padding: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                padding: 1rem 1.25rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 1.0625rem 1.5rem 1.5rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding: 1.125rem 1.625rem 2.25rem;
+            }
+        }
+
+        &__title {
+
+            h2,
+            h2.h5 {
+                color: $dark-black;
+                font-weight: 600;
+                transition: .3s all ease-in-out;
+            }
+
+            a {
+                &:hover {
+                    text-decoration: none;
+
+                    h2 {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        &__media {
+            flex: 0 0 auto;
+
+            img {
+                width: 100%;
+                border-radius: 8px 8px 0px 0px;
+            }
+        }
+
+        &__category,
+        &__date {
+            line-height: 1.2;
+            font-weight: 400;
+            color: $dark-gray-100;
+            display: inline-block;
+            @include font-size(1rem);
+        }
+
+        &__category {
+            margin-right: .5rem;
+
+            @include media-breakpoint-up(lg) {
+                margin-right: .9375rem;
+            }
+        }
+
+        &--alt {
+            position: relative;
+            transition: all .3s;
+            box-shadow: 0px 0px 20px rgba($black, 0.1);
+
+            .card-blog__content {
+                padding: 1rem;
+
+                @include media-breakpoint-up(sm) {
+                    padding: 1.25rem 1.125rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    padding: 1.5rem 1.25rem;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    padding: 1.875rem 1.375rem;
+                }
+
+                h2 {
+                    color: $dark-gray-100;
+                }
+
+            }
+
+            .card-blog__category {
+                color: $white;
+                margin-right: 0;
+                font-weight: 600;
+                font-size: .75rem;
+                border-radius: 5px;
+                padding: .5rem .75rem;
+                letter-spacing: 0.15rem;
+                text-transform: uppercase;
+                background-color: $primary;
+            }
+
+            .card-blog__head {
+                position: absolute;
+                top: 1rem;
+                left: 1.125rem;
+            }
+
+            .card-blog__title {
+                a {
+                    &:hover {
+                        .card-blog__category {
+                            color: $primary;
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .card-blog__category {
+                    color: $primary;
+                    background-color: $white;
+                }
+            }
+        }
+    }
 }

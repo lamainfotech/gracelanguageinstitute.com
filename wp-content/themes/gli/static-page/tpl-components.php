@@ -47,6 +47,60 @@ get_header();
         </div>
         <hr>
         <hr>
+        <h2 class="my-2 text-center"><em>[.card-blog]</em></h2>
+        <div class="container py-2 bg-primary">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <article class="card card-blog">
+                        <picture class="card-blog__media">
+                            <source srcset="<?php echo site_url(); ?>/wp-content/uploads/man-watching-his-favorite-movie-tablet.jpg" type="image/jpg">
+                            <img src="<?php echo site_url(); ?>/wp-content/uploads/man-watching-his-favorite-movie-tablet.jpg" width="1000" height="667" loading="lazy" alt="Man watching his favorite movie">
+                        </picture> <!-- /.card-blog__media -->
+
+                        <div class="card-blog__content">
+                            <div class="card-blog__title mb-1 mb-md-2">
+                                <a href="#" class="stretched-link">
+                                    <h2 class="h5 mb-0">General English Class for Everyone</h2>
+                                </a>
+                            </div>
+                            <div class="card-blog__body">
+                                <span class="card-blog__category">10 Lessons</span>
+                                <span class="card-blog__date">6 Weeks</span>
+                            </div>
+                        </div> <!-- /.card-blog__content -->
+                    </article><!-- /.card-blog -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <h2 class="my-2 text-center"><em>[.card-blog.card-blog--alt]</em></h2>
+        <div class="container py-2 bg-primary">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card card-blog card-blog--alt">
+                        <picture class="card-blog__media">
+                            <source srcset="<?php echo site_url(); ?>/wp-content/uploads/man-watching-his-favorite-movie-tablet.jpg" type="image/jpg">
+                            <img src="<?php echo site_url(); ?>/wp-content/uploads/man-watching-his-favorite-movie-tablet.jpg" width="1000" height="667" loading="lazy" alt="Man watching his favorite movie">
+                        </picture> <!-- /.card-blog__media -->
+
+                        <div class="card-blog__content">
+                            <div class="card-blog__head">
+                                <span class="card-blog__category">Speaking</span>
+                            </div>
+                            <div class="card-blog__title text-center">
+                                <a href="#" class="stretched-link">
+                                    <h2 class="h5 mb-0">How to Quickly Improve Your English Listening Skills</h2>
+                                </a>
+                            </div>
+                        </div> <!-- /.card-blog__content -->
+                    </article><!-- /.card-blog -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
     </div><!-- /.container -->
 </section>
 
