@@ -183,7 +183,7 @@
         &__title {
 
             h2,
-            h2.h5 {
+            h3.h5 {
                 color: $dark-black;
                 font-weight: 600;
                 transition: .3s all ease-in-out;
@@ -193,7 +193,7 @@
                 &:hover {
                     text-decoration: none;
 
-                    h2 {
+                    h3 {
                         color: $primary;
                     }
                 }
@@ -246,7 +246,7 @@
                     padding: 1.875rem 1.375rem;
                 }
 
-                h2 {
+                h3 {
                     color: $dark-gray-100;
                 }
 

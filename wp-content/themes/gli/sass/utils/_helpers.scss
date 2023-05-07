@@ -427,3 +427,17 @@ ol {
 .bg-lightGreen {
 	background-color: $light-green-100;
 }
+
+.minHeight {
+	&-420 {
+		min-height: 380px;
+
+		@include media-breakpoint-up(sm) {
+			min-height: 400px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			min-height: 420px;
+		}
+	}
+}

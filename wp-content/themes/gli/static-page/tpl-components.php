@@ -60,7 +60,7 @@ get_header();
                         <div class="card-blog__content">
                             <div class="card-blog__title mb-1 mb-md-2">
                                 <a href="#" class="stretched-link">
-                                    <h2 class="h5 mb-0">General English Class for Everyone</h2>
+                                    <h3 class="h5 mb-0">General English Class for Everyone</h3>
                                 </a>
                             </div>
                             <div class="card-blog__body">
@@ -75,7 +75,7 @@ get_header();
         <hr>
         <hr>
         <h2 class="my-2 text-center"><em>[.card-blog.card-blog--alt]</em></h2>
-        <div class="container py-2 bg-primary">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <article class="card card-blog card-blog--alt">
@@ -90,7 +90,7 @@ get_header();
                             </div>
                             <div class="card-blog__title text-center">
                                 <a href="#" class="stretched-link">
-                                    <h2 class="h5 mb-0">How to Quickly Improve Your English Listening Skills</h2>
+                                    <h3 class="h5 mb-0">How to Quickly Improve Your English Listening Skills</h3>
                                 </a>
                             </div>
                         </div> <!-- /.card-blog__content -->
