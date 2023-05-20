@@ -62,7 +62,7 @@
                     <div class="banner-content block-width-55">
                         <h1>Learning A <br> Language is Easier!</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#" class="btn btn-secondary btn-play">Play Video</a>
+                        <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fancybox class="btn btn-secondary btn-play">Play Video</a>
                     </div>
                 </div><!-- /.container -->
             </section><!-- /.banner -->

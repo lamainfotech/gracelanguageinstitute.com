@@ -77,15 +77,6 @@ var ss;
 			jQuery(window).resize(stickyHeader);
 			jQuery(window).scroll(stickyHeader);
 
-			//site-content padding
-			// function siteContentPadding(){
-			// 	var headerHeight = jQuery(".header-top").outerHeight();
-			// 	var mainContent = jQuery(".site-content");
-			// 	mainContent.css("padding-top", headerHeight);
-			// }
-			// siteContentPadding();
-			// jQuery(window).resize(siteContentPadding);
-
 			//dropdown toggle
 			$(".navbar-nav .menu-item-has-children .caret").on(
 				"click",

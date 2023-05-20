@@ -1,0 +1,91 @@
+//list-check
+.list-check ul,
+ul.list-check {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-up(sm) {
+        margin-bottom: 2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 2.5rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-bottom: 3rem;
+    }
+
+    li {
+        font-weight: 600;
+        color: $dark-black;
+        position: relative;
+        padding-left: 3rem;
+        @include font-size(1.375rem);
+
+        @include media-breakpoint-up(sm) {
+            padding-left: 3.25rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 3.5rem;
+        }
+
+        &:before {
+            content: '\e907';
+            font-family: 'icomoon';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            color: $white;
+            display: flex;
+            line-height: 1.2;
+            border-radius: 6px;
+            align-items: center;
+            justify-content: center;
+            @include font-size(1.125rem);
+            background-color: $primary;
+
+            @include media-breakpoint-up(lg) {
+                top: -2px;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                margin-right: 2rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-right: 3rem;
+            }
+        }
+    }
+
+}
+
+.list-column ul,
+ul.list-column {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include media-breakpoint-up(sm) {
+        justify-content: center;
+    }
+
+    li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 1.5rem;
+        }
+    }
+}

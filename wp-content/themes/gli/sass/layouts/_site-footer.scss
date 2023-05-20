@@ -1,67 +1,75 @@
 .section-map {
-    iframe {
-        width: 100%;
-        height: 300px;
+	iframe {
+		width: 100%;
+		height: 300px;
 
-        @include media-breakpoint-up(md) {
-            height: 350px;
-        }
+		@include media-breakpoint-up(md) {
+			height: 350px;
+		}
 
-        @include media-breakpoint-up(lg) {
-            height: 450px;
-        }
+		@include media-breakpoint-up(lg) {
+			height: 450px;
+		}
 
-        @include media-breakpoint-up(xl) {
-            height: 500px;
-        }
-    }
+		@include media-breakpoint-up(xl) {
+			height: 500px;
+		}
+	}
 }
 
 // Site Footer
 .site-footer {
-	padding: 3rem 0 1rem;
+	// padding: 2rem 0;
 
-	@include media-breakpoint-up(xl) {
-		padding: 6.875rem 0 2.5rem;
-	}
+	.col-lg-4 {
+		&:not(:last-child) .site-footer__item {
 
-	&__logo {
-
-		@include media-breakpoint-down(sm) {
-			text-align: center;
+			@include media-breakpoint-down(xs) {
+				border-bottom: 1px solid $primary;
+			}
 		}
-		
-		a {
-			display: inline-block;
+
+		&:first-child .site-footer__item {
+			@include media-breakpoint-down(xs) {
+				padding-top: 0;
+			}
+		}
+
+		&:last-child .site-footer__item {
+			@include media-breakpoint-down(xs) {
+				padding-bottom: 0;
+			}
 		}
 	}
 
 	&__item {
 		color: $black;
 		@include font-size(0.9375rem);
-		margin-bottom: 2.5rem;
 
 		@include media-breakpoint-up(xl) {
 			@include font-size(1rem);
 		}
 
-		@include media-breakpoint-down(sm) {
-			border-bottom: 1px solid rgba($white, .5);
-			margin-bottom: 0;
+		@include media-breakpoint-down(xs) {
 			padding: 1rem 0;
+			// border-bottom: 1px solid $primary;
 		}
 
-		.h5 {
-			color: $black;
-			@include font-size(1.1875rem);
-			text-transform: capitalize;
+		h3.h5 {
+			color: $dark-black;
+			font-weight: 600;
+			letter-spacing: 1.5px;
+			margin-bottom: 1rem;
+			text-transform: uppercase;
+			@include font-size(1.25rem);
 
 			@include media-breakpoint-up(md) {
-				@include font-size(1.375rem);
+				@include font-size(1.5rem);
+				margin-bottom: 1.125rem;
 			}
 
 			@include media-breakpoint-up(xl) {
-				@include font-size(1.5625rem);
+				@include font-size(1.625rem);
 			}
 		}
 
@@ -72,38 +80,36 @@
 		}
 
 		li {
-			margin-bottom: .75rem;
+
+			&:not(:last-child) {
+				margin-bottom: .75rem;
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: .875rem;
+				}
+			}
 		}
 
 		a {
-			color: $black;
+			font-size: 18px;
+			font-weight: 400;
 			text-decoration: none;
-			font-weight: 500;
-			letter-spacing: 0;
+			color: $dark-gray-100;
+			text-transform: capitalize;
+
+			@include media-breakpoint-up(lg) {
+				font-size: 20px;
+			}
 
 			&:hover {
 				color: $primary;
 			}
 		}
 
-		p {
-
-			&:last-of-type {
+		&.site-footer__social {
+			li {
 				margin-bottom: 0;
 			}
-		}
-
-		.toggle {
-
-			&Block {
-				display: none;
-
-				@include media-breakpoint-up(md) {
-					display: block !important;
-					height: 100% !important;
-				}
-			}
-
 		}
 	}
 
@@ -117,6 +123,7 @@
 
 		li {
 			display: inline-block;
+			margin-bottom: 0;
 			margin: 0 0.4375rem 0 0;
 
 			@include media-breakpoint-up(xl) {
@@ -125,63 +132,41 @@
 		}
 
 		a {
-			text-decoration: none;
-			background-color: $white;
-			width: 2rem;
-			height: 2rem;
+			color: $white;
 			display: flex;
-			align-items: center;
-			justify-content: center;
+			width: 2.375rem;
+			height: 2.375rem;
 			border-radius: 100%;
-			color: $primary;
-			@include font-size(0.875rem);
+			align-items: center;
+			text-decoration: none;
+			justify-content: center;
+			@include font-size(1rem);
+			background-color: $primary;
+			border: 1px solid transparent;
 
-			@include media-breakpoint-up(xl) {
-				width: 2.375rem;
-				height: 2.375rem;
-				@include font-size(1rem);
+			@include media-breakpoint-up(lg) {
+				@include font-size(1.125rem);
 			}
 
 			&:hover {
-				background-color: $primary;
-				color: $white;
+				color: $primary;
+				border-color: $primary;
+				background-color: $white;
 			}
 		}
 	}
 
-	&__location {
+	&__bottom {
+		.copyright-wrap {
+			border-top: 2px solid $light-green-100;
+			color: $dark-gray-100;
+			@include font-size(1rem);
 
-		@include media-breakpoint-up(xxl) {
-			line-height: 2.75;
-		}
-	}
-
-	&__links {
-		padding: 0;
-
-		ul {
-			column-count: 1;
-
-			@include media-breakpoint-down(sm) {
-				column-count: auto;
+			span {
+				display: block;
+				color: inherit;
 			}
 		}
 
-		li {
-			break-inside: avoid;
-		}
-	}
-
-	&__copyright {
-		@include font-size(0.9375rem);
-		color: $black;
-
-		@include media-breakpoint-down(sm) {
-			margin-top: 1rem;
-		}
-
-		@include media-breakpoint-down(xs) {
-			@include font-size(0.8125rem);
-		}
 	}
 }
