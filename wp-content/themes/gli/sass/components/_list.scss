@@ -6,51 +6,62 @@ ul.list-check {
     padding: 0;
 
     @include media-breakpoint-up(sm) {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     @include media-breakpoint-up(lg) {
-        margin-bottom: 2.5rem;
-    }
-
-    @include media-breakpoint-up(xxl) {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     li {
+        display: flex;
         font-weight: 600;
+        min-height: 32px;
         color: $dark-black;
         position: relative;
-        padding-left: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2.75rem;
         @include font-size(1.375rem);
-
+        
         @include media-breakpoint-up(sm) {
+            min-height: 36px;
+            padding-left: 3rem;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            min-height: 40px;
             padding-left: 3.25rem;
         }
 
-        @include media-breakpoint-up(lg) {
-            padding-left: 3.5rem;
+        span,
+        p {
+            line-height: 26px;
         }
 
         &:before {
-            content: '\e907';
-            font-family: 'icomoon';
+            content: '';
             position: absolute;
-            top: -4px;
+            top: 0;
             left: 0;
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             color: $white;
-            display: flex;
-            line-height: 1.2;
+            line-height: 1;
             border-radius: 6px;
-            align-items: center;
-            justify-content: center;
-            @include font-size(1.125rem);
-            background-color: $primary;
+            background-image: url('/wp-content/uploads/checkbox.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @include media-breakpoint-up(sm) {
+                width: 36px;
+                height: 36px;
+            }
 
             @include media-breakpoint-up(lg) {
-                top: -2px;
+                width: 40px;
+                height: 40px;
             }
         }
 
@@ -76,16 +87,12 @@ ul.list-column {
     align-items: center;
     justify-content: flex-start;
 
-    @include media-breakpoint-up(sm) {
-        justify-content: center;
-    }
-
     li {
         break-inside: avoid;
         page-break-inside: avoid;
 
         @include media-breakpoint-down(xs) {
-            padding-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 }

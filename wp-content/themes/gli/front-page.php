@@ -118,8 +118,8 @@ get_header();
             <img src="<?php echo site_url(); ?>/wp-content/uploads/education-concept-student-studying-brainstorming-campus-concept-close-up-students-discussing-their-subject-books-textbooks-selective-focus.jpg" width="1500" height="1000" loading="lazy" alt="Reading">
         </div>
         <div class="row">
-            <div class="col-lg-6">
-                <div class="form-list list-check list-column block-width-50 mx-auto">
+            <div class="col-lg-6 mb-1 mb-sm-2 mb-lg-0">
+                <div class="form-list list-check list-column block-width-50 mx-auto ">
                     <ul>
                         <li><span>Speaking</span></li>
                         <li>Integrated Class</li>
@@ -127,8 +127,8 @@ get_header();
                     <p>Our ESL program is also licenced to operate by the State of California’s Bureau for Private Postsecondary and Vocational Education.</p>
                 </div>
             </div>
-            <div class="col-lg-6 contact-form__wrapper">
-                <div class="contact-form px-xl-4 px-md-3 px-2 pt-xl-3 pt-sm-2 pt-1">
+            <div class="col-lg-6 contact-form__wrapper mb-1 mb-sm-2 mb-lg-0">
+                <div class="contact-form pt-xl-3 pt-sm-2 pt-1">
                     <div class="block-title text-center">
                         <h3 class="h4">Free Trial</h3>
                         <p>Your data is safe with us!</p>
@@ -212,7 +212,6 @@ get_header();
     <h2 class="d-none">Map</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14130.946795029693!2d85.34463115!3d27.694531700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1664393242972!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section> <!-- /.map -->
-
 
 <?php
 get_footer();
