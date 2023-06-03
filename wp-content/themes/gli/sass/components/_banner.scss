@@ -64,32 +64,18 @@
     }
 
     &-inner {
-        min-height: 12.875rem;
-        display: flex;
-        align-items: center;
-        padding: 2rem 0;
-        text-align: center;
+        padding: 8rem 0;
 
-        @include media-breakpoint-up(sm) {
-            min-height: 14.375rem;
-            padding: 3rem 0;
-        }
-
-        @include media-breakpoint-up(md) {
-            // min-height: 16.875rem;
-        }
-
-        @include media-breakpoint-up(lg) {
-            // min-height: 18.875rem;
-            text-align: inherit;
-        }
-
-        // @include media-breakpoint-up(xl) {
-        //     min-height: 21.875rem;
+        // @include media-breakpoint-up(sm) {
+        //     padding: 6rem 0;
         // }
 
-        @media (min-width: 0\0) {
-            height: 21.875rem;
+        // @include media-breakpoint-up(lg) {
+        //     padding: 7rem 0;
+        // }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 8rem 0;
         }
     }
 

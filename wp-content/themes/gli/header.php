@@ -56,13 +56,41 @@
         </header>
 
         <main class="site-content">
-            <section class="banner bg-cover">
-                <img src="<?php echo site_url(); ?>/wp-content/uploads/guy-learning.jpg" alt="Banner">
-                <div class="container">
-                    <div class="banner-content block-width-55">
-                        <h1>Learning A <br> Language is Easier!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fancybox class="btn btn-secondary btn-play">Play Video</a>
+            <?php if (is_front_page()) {
+            ?>
+                <section class="banner bg-cover">
+                    <img src="<?php echo site_url(); ?>/wp-content/uploads/guy-learning.jpg" alt="Banner">
+                    <div class="container">
+                        <div class="banner-content block-width-55">
+                            <h1>Learning A <br> Language is Easier!</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fancybox class="btn btn-secondary btn-play">Play Video</a>
+                        </div>
+                    </div> <!-- /.container -->
+                </section> <!-- /.banner -->
+
+            <?php } elseif (is_page('sub-courses')) { ?>
+
+            <?php } else { ?>
+
+                <section class="banner-inner">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="two-col__content">
+                                    <h2>Learn English <br> Basic to Advanced</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn btn-primary">Explore Courses</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="two-col__media">
+                                    <img src="/wp-content/uploads/english-books-resting-table-working-space.jpg" alt="English book" width="1000" height="668" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div><!-- /.container -->
-            </section><!-- /.banner -->
+                </section>
+            <?php } ?>

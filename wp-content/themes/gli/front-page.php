@@ -133,7 +133,7 @@ get_header();
                         <h3 class="h4">Free Trial</h3>
                         <p>Your data is safe with us!</p>
                     </div>
-                    <?php echo do_shortcode('[wpforms id="49"]'); ?>
+                    <?php echo do_shortcode('[wpforms id="70"]'); ?>
                 </div>
             </div>
         </div>

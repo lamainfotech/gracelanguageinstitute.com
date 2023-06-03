@@ -1,12 +1,19 @@
 // Forms
 .contact-form {
     background: $white;
-    max-width: 33.75rem;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0px 2px 20px rgba($black, 0.15);
+    
+    @include media-breakpoint-up(xl) {
+        margin-left: auto;
+        max-width: 33.75rem;
+        margin-right: auto;
+    }
 
     &__wrapper {
+        @include media-breakpoint-up(lg) {
+            margin-top: -12rem;
+        }
+
         @include media-breakpoint-up(xxl) {
             margin-top: -14rem;
         }
@@ -110,7 +117,7 @@
             text-align: center;
 
             .wpforms-submit,
-            #wpforms-submit-49 {
+            #wpforms-submit-70 {
                 width: 100%;
                 height: auto;
                 color: $white;
@@ -145,6 +152,8 @@
                     border-color: $primary;
                     background-color: $white;
                 }
+
+
             }
         }
 
@@ -165,6 +174,17 @@
                     padding-left: 4rem;
                     padding-right: 4rem;
                 }
+            }
+
+            .wpforms-submit-spinner {
+                position: absolute;
+                display: inline-block;
+                vertical-align: middle;
+                top: 45%;
+                left: 64%;
+                right: 0;
+                color: white;
+                transform: translateX(-50%);
             }
         }
     }
