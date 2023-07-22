@@ -2,7 +2,7 @@
 .contact-form {
     background: $white;
     box-shadow: 0px 2px 20px rgba($black, 0.15);
-    
+
     @include media-breakpoint-up(xl) {
         margin-left: auto;
         max-width: 33.75rem;
@@ -45,7 +45,7 @@
     .wpforms {
         &-field {
             &-medium {
-                height: 2.5rem;
+                height: 3rem;
                 max-width: 100% !important;
                 text-transform: capitalize !important;
                 background-color: $white !important;
@@ -53,16 +53,12 @@
                 border-radius: 4px !important;
                 box-shadow: 0px 0px 10px rgba($black, 0.04) !important;
 
-                @include media-breakpoint-up(md) {
-                    height: 3rem !important;
-                }
-
-                @include media-breakpoint-up(lg) {
-                    height: 3.5rem !important;
+                @include media-breakpoint-up(sm) {
+                    height: 3.5rem;
                 }
 
                 @include media-breakpoint-up(xl) {
-                    height: 4rem !important;
+                    height: 4rem;
                 }
 
                 &::-webkit-input-placeholder {
