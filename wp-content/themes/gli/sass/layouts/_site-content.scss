@@ -1,0 +1,11 @@
+.two-col {
+    &__content {
+        h2 {
+            @include media-breakpoint-down(md) {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}

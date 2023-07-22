@@ -114,8 +114,8 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
-                                <div class="two-col__content">
-                                    <h2>Learn English <br> Basic to Advanced</h2>
+                                <div class="two-col__content mb-2 mb-lg-0">
+                                    <h2 class="mb-1">Learn English <br> Basic to Advanced</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <div class="btn-wrap">
                                         <a href="#" class="btn btn-primary">Explore Courses</a>
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="two-col__media">
+                                <div class="two-col__media mb-2 mb-lg-0">
                                     <img src="/wp-content/uploads/english-books-resting-table-working-space.jpg" alt="English book" width="1000" height="668" loading="lazy">
                                 </div>
                             </div>
