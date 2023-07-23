@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<section class="tab-section pt-2 pt-sm-3 py-lg-4 py-xxl-5">
+<section class="tab-section py-2 py-sm-3 py-lg-4 py-xxl-5">
     <div class="container">
         <header class="block-title text-center mt-7 mt-lg-5">
             <h2>Want to be Fluent in English?</h2>
@@ -19,8 +19,7 @@ get_header();
                         <h6>English</h6>
                     </div>
                 </div>
-            </div>
-            <!--/.slide-item -->
+            </div> <!--/.slide-item -->
             <div class="slide-item">
                 <div class="tab-nav__head">
                     <picture class="tab-nav__logo">
@@ -31,12 +30,11 @@ get_header();
                         <h6>Nepal</h6>
                     </div>
                 </div>
-            </div>
-            <!--/.slide-item -->
+            </div> <!--/.slide-item -->
         </div><!-- /tab-nav -->
     </div>
 
-    <div class="bg-lightGreen py-lg-4 py-sm-3 pt-2">
+    <div class="bg-lightGreen pt-lg-4 pt-sm-3 pt-2 pb-1">
         <div class="container">
             <div class="tab-nav__main tab-nav__sliderMain slick-no-arrows slick-no-dots">
                 <div class="slide-item">
@@ -274,7 +272,7 @@ get_header();
     <!-- /.tab-nav__main -->
 </section><!-- /.tab-section -->
 
-<section class="form bg-cover py-xxl-6 py-lg-4 py-sm-3 py-2">
+<section class="form bg-cover pb-xxl-6 pb-lg-4 pb-sm-2 pb-1">
     <div class="container">
         <header class="block-title text-center block-width-70 mx-auto mb-sm-2 mb-1">
             <h2>Sign Up For A Free Trial</h2>

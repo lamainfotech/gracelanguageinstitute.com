@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<section class="explore-courses bg-lightGreen py-2 py-sm-4 py-lg-5 pb-xxl-8">
+<section class="explore-courses bg-lightGreen pt-2 py-sm-3 py-lg-4 pb-xxl-6">
     <div class="container">
         <div class="row align-items-center flex-row-reverse">
             <div class="col-lg-6">
@@ -26,7 +26,7 @@ get_header();
     </div>
 </section> <!-- /explore-courses -->
 
-<section class="form bg-cover py-xxl-6 py-lg-4 py-sm-3 py-2">
+<section class="form bg-cover py-lg-4 py-sm-3 py-2">
     <div class="container">
         <header class="block-title text-center block-width-70 mx-auto mb-sm-2 mb-1">
             <h2>Sign Up For A Free Trial</h2>
