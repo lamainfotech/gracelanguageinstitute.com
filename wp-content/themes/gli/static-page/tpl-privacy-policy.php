@@ -3,9 +3,9 @@
 get_header();
 ?>
 
-<section class="privacy-policy py-xxl-5 py-lg-4 py-sm-3 py-2">
+<section class="privacy-policy-page pt-sm-8 pt-7 pb-xxl-5 pb-lg-4 pb-sm-3 pb-2">
     <div class="container">
-        <div class="block-title">
+        <div class="block-title mt-2">
             <div class="heading-secondary text-center mb-lg-3 mb-sm-2 mb-1">
                 <h2>Privacy Policy</h2>
             </div>

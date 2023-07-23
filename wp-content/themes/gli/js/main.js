@@ -195,6 +195,44 @@ var ss;
 				},
 				],
 			});
+
+			//tab-nav__sliderNav
+			$(".tab-nav__sliderNav").slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				asNavFor: ".tab-nav__sliderMain",
+				speed: 900,
+				focusOnSelect: true,
+				infinite: true,
+				responsive: [{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 576,
+					settings: {
+						slidesToShow: 2,
+						adaptiveHeight: true,
+					},
+				},
+				],
+			});
+
+			//tab-nav__sliderMain
+			$(".tab-nav__sliderMain").slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				asNavFor: ".tab-nav__sliderNav",
+				speed: 900,
+				adaptiveHeight: true,
+				infinite: true,
+				draggable: false,
+				swipeToSlide: false,
+				touchMove: false,
+				swipe: false,
+			});
 		},
 		gallery: function () {
 			try {
