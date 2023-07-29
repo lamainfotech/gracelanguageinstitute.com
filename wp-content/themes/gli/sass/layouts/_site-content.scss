@@ -7,5 +7,142 @@
                 }
             }
         }
+
+        .btn {
+
+            &-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+
+                @media(max-width:440px) {
+                    justify-content: center;
+                }
+            }
+
+            &-link {
+                padding: 0;
+                color: $black;
+                margin-top: 0px;
+                transition: all .3s ease-in-out;
+
+                @media(max-width:440px) {
+                    margin-top: 16px;
+                }
+
+            }
+
+            &:not(:last-child) {
+
+                @media(min-width: 430px) {
+                    margin-right: 12px;
+                }
+
+                @include media-breakpoint-up(sm) {
+                    margin-right: 16px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    margin-right: 20px;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+
+    &__media {
+        &.has-border {
+            img {
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.page-section__wrap {
+    padding: 1rem 0;
+    color: $white;
+    position: relative;
+    background-color: $dark-gray-100;
+
+    &::before {
+
+        @include media-breakpoint-up(sm) {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            height: 100%;
+            width: 0%;
+            border-top: 58px solid $white;
+            border-left: 58px solid transparent;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 50%;
+            border-width: 60px;
+        }
+
+        // @include media-breakpoint-up(xl) {
+        //     border-width: 60px;
+        // }
+
+        @include media-breakpoint-up(xxl) {
+            border-width: 63.8px;
+        }
+    }
+
+    .block-header {
+        .btn-title {
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+
+            @include media-breakpoint-up('sm') {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 24px;
+
+                @include media-breakpoint-up('sm') {
+                    margin-right: 32px;
+                }
+
+                @include media-breakpoint-up('md') {
+                    margin-right: 48px;
+                }
+
+                @include media-breakpoint-up('xl') {
+                    margin-right: 60px;
+                }
+
+                @media (max-width:374px) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.page-template-tpl-courses-detail {
+    .banner-inner {
+        padding-bottom: 2rem !important;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 5rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding-top: 7rem;
+        }
     }
 }

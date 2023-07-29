@@ -107,7 +107,38 @@ var ss;
 			}
 		},
 		misc: function () {
+
 			try {
+
+				/* smooth scroll*/
+				jQuery(function () {
+					$('.smooth-scroll[href*="#"]:not([href="#"])').click(function () {
+						var target = $(this.hash);
+						$('html,body').stop().animate({
+							scrollTop: target.offset().top - 120
+						}, 1000);
+					});
+
+					if (window.location.hash) {
+						scroll(0, 0);
+						setTimeout(function () {
+							scroll(0, 0);
+						}, 1);
+					}
+
+					if (window.location.hash) {
+						$("html, body").animate({
+							scrollTop: $(window.location.hash).offset().top - 120
+						}, 1000);
+					}
+				});
+
+				//accordion active
+				jQuery(".faq-accordion .accordion-title").on("click", (function () {
+					jQuery(this).parents(".accordion-item").toggleClass("active"),
+						jQuery(".faq-accordion .accordion-title").not(this).parents(".accordion-item").removeClass("active")
+				}));
+
 				$('[data-fix="height"]').matchHeight();
 
 			} catch (err) {

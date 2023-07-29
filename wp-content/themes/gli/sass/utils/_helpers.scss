@@ -441,3 +441,52 @@ ol {
 		}
 	}
 }
+
+.star-ratings {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 10px;
+	line-height: 1;
+	color: #FFD233;
+	font-size: 1.125rem;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 1.25rem;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		font-size: 1.5rem;
+	}
+
+	li {
+		display: inline-block;
+
+		&:not(:last-child) {
+			padding-right: 2px;
+		}
+	}
+}
+
+.author {
+	&-info {
+		margin-bottom: 12px;
+
+		span {
+			font-size: 14px;
+			line-height: 18px;
+			color: $dark-gray-100;
+		}
+
+		.date {
+			padding-left: 18px;
+
+			@include media-breakpoint-up(sm) {
+				padding-left: 20px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				padding-left: 24px;
+			}
+		}
+	}
+}

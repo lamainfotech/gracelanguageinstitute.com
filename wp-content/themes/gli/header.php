@@ -131,7 +131,29 @@
                     </div>
                 </section>
             <?php } elseif ($banner_type['value'] == 'course detail') { ?>
-
+                <section class="banner-inner">
+                    <div class="container">
+                        <div class="row align-items-center mb-lg-1">
+                            <div class="col-lg-7">
+                                <div class="two-col__content mb-2 mb-lg-0 block-width-55">
+                                    <h2 class="mb-1">General English Course
+                                        <br> For Anyone
+                                    </h2>
+                                    <p>Find extra listening and reading practice to help you improve your level of English and practise language you can use in everyday situations.</p>
+                                    <div class="btn-wrap pt-0 pt-md-1 pt-lg-2 pt-xxl-3">
+                                        <a href="#" class="btn btn-primary">Submit Application</a>
+                                        <a href="#" class="btn btn-link">Financial aid available</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="two-col__media text-center has-border mb-2 mb-lg-0">
+                                    <img src="/wp-content/uploads/conference-class.jpg" alt="Conference class" width="474" height="474" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- Course Detail Page Banner Goes Here -->
 
             <?php } elseif ($banner_type['value'] == 'blog') { ?>

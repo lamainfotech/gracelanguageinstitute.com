@@ -295,4 +295,30 @@
             }
         }
     }
+
+    &-info {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+
+        @include media-breakpoint-up(sm) {
+            flex-wrap: nowrap;
+            text-align: left;
+        }
+
+        &__media {
+            @include media-breakpoint-up(sm) {
+                padding-right: 16px;
+            }
+
+            picture {
+                display: inline-block;
+            }
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
 }
