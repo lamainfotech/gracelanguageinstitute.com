@@ -162,6 +162,16 @@
 
             <?php } elseif ($banner_type['value'] == 'contact') { ?>
 
+                <section class="banner banner-contact bg-cover">
+                    <img src="<?php echo site_url(); ?>/wp-content/uploads/education-concept-student-studying-brainstorming-campus-concept-close-up-students-discussing-their-subject-books-textbooks-selective-focus.jpg" alt="Banner">
+                    <div class="container">
+                        <div class="banner-content text-white block-width-75">
+                            <h1>Get in touch today!</h1>
+                            <p>On the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform.</p>
+                        </div>
+                    </div> <!-- /.container -->
+                </section> <!-- /.banner -->
+
                 <!-- Contact Page Banner Goes Here -->
 
             <?php } elseif ($banner_type['value'] == 'none') {

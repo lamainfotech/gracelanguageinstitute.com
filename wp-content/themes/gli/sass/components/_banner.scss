@@ -101,14 +101,53 @@
         }
     }
 
-    &-breadcrumbs {
+    &-contact {
+        color: $white;
+        min-height: 400px;
 
-        a {
-            color: $white;
-            text-decoration: none;
+        @include media-breakpoint-up(md) {
+            min-height: 420px;
+        }
 
-            &:hover {
-                color: $primary;
+        @include media-breakpoint-up(xl) {
+            min-height: 460px;
+        }
+
+        &::before {
+            right: 0;
+            background: rgba(#263238, 0.5);
+        }
+
+        .banner-content {
+
+            // @include media-breakpoint-up(lg) {
+            //     padding-left: 2rem;
+            // }
+
+            // @include media-breakpoint-up(xl) {
+            //     padding-left: 3rem;
+            // }
+
+            // @include media-breakpoint-up(xxl) {
+            //     padding-left: 4rem;
+            // }
+
+            h1 {
+                color: $white;
+                font-weight: 600;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 2.375rem;
+                    line-height: 55px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 20px;
+                }
             }
         }
     }

@@ -159,6 +159,12 @@ ol {
 			}
 		}
 
+		&-68 {
+			@include media-breakpoint-up(lg) {
+				max-width: 42.5rem;
+			}
+		}
+
 		&-50 {
 			@include media-breakpoint-up(lg) {
 				max-width: 31.25rem;

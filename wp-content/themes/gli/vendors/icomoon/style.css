@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?prj4bc');
-  src:  url('fonts/icomoon.eot?prj4bc#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?prj4bc') format('truetype'),
-    url('fonts/icomoon.woff?prj4bc') format('woff'),
-    url('fonts/icomoon.svg?prj4bc#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?yrfmwb');
+  src:  url('fonts/icomoon.eot?yrfmwb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yrfmwb') format('truetype'),
+    url('fonts/icomoon.woff?yrfmwb') format('woff'),
+    url('fonts/icomoon.svg?yrfmwb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-time:before {
+  content: "\e91c";
+}
 .icon-online-learning:before {
   content: "\e91b";
 }
