@@ -128,27 +128,17 @@ get_header();
         </header>
         <div class="accordion faq-accordion" id="faqAccordion">
             <div class="accordion-item active">
-                <button class="accordion-title" type="button" data-toggle="collapse" data-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+                <button class="accordion-title" type="button" data-toggle="collapse" data-target="#faq-1" aria-expanded="false" aria-controls="faq-1">
                     Who can enroll this course?
                 </button>
-                <div id="faq-5" class="collapse show" data-parent="#faqAccordion">
+                <div id="faq-1" class="collapse show" data-parent="#faqAccordion">
                     <div class="accordion-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nulla enim. Proin eu rutrum est. Nunc faucibus scelerisque dolor, a scelerisque diam vulputate sed. Donec rutrum blandit diam ac dictum. Curabitur tristique pellentesque dui nec convallis. Cras tempor egestas hendrerit. Integer egestas ornare nisl. Integer sed bibendum dui. Vestibulum vitae turpis justo. Cras vestibulum mollis mi, quis aliquet augue venenatis ac.</p>
                     </div>
                 </div>
             </div><!-- /.accordion-item -->
             <div class="accordion-item">
-                <button class="accordion-title collapsed" type="button" data-toggle="collapse" data-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
-                    Can I join this class from online Zoom?
-                </button>
-                <div id="faq-1" class="collapse" data-parent="#faqAccordion">
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nulla enim. Proin eu rutrum est. Nunc faucibus scelerisque dolor, a scelerisque diam vulputate sed. Donec rutrum blandit diam ac dictum. Curabitur tristique pellentesque dui nec convallis. Cras tempor egestas hendrerit. Integer egestas ornare nisl. Integer sed bibendum dui. Vestibulum vitae turpis justo. Cras vestibulum mollis mi, quis aliquet augue venenatis ac.</p>
-                    </div>
-                </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-                <button class="accordion-title collapsed" type="button" data-toggle="collapse" data-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                <button class="accordion-title collapsed" type="button" data-toggle="collapse" data-target="#faq-2" aria-expanded="true" aria-controls="faq-2">
                     Can I join this class from online Zoom?
                 </button>
                 <div id="faq-2" class="collapse" data-parent="#faqAccordion">
@@ -172,6 +162,16 @@ get_header();
                     Can I join this class from online Zoom?
                 </button>
                 <div id="faq-4" class="collapse" data-parent="#faqAccordion">
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nulla enim. Proin eu rutrum est. Nunc faucibus scelerisque dolor, a scelerisque diam vulputate sed. Donec rutrum blandit diam ac dictum. Curabitur tristique pellentesque dui nec convallis. Cras tempor egestas hendrerit. Integer egestas ornare nisl. Integer sed bibendum dui. Vestibulum vitae turpis justo. Cras vestibulum mollis mi, quis aliquet augue venenatis ac.</p>
+                    </div>
+                </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+                <button class="accordion-title collapsed" type="button" data-toggle="collapse" data-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+                    Can I join this class from online Zoom?
+                </button>
+                <div id="faq-5" class="collapse" data-parent="#faqAccordion">
                     <div class="accordion-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nulla enim. Proin eu rutrum est. Nunc faucibus scelerisque dolor, a scelerisque diam vulputate sed. Donec rutrum blandit diam ac dictum. Curabitur tristique pellentesque dui nec convallis. Cras tempor egestas hendrerit. Integer egestas ornare nisl. Integer sed bibendum dui. Vestibulum vitae turpis justo. Cras vestibulum mollis mi, quis aliquet augue venenatis ac.</p>
                     </div>
