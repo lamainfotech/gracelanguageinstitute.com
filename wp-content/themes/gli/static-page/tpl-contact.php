@@ -5,8 +5,8 @@ get_header();
 
 <section class="contact-details pb-xl-5 py-lg-4 py-sm-3 py-2">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
+        <div class="row justify-content-lg-between">
+            <div class="col-lg-7 col-xl-7 mb-2 mb-lg-0">
                 <div class="block-title mb-2 mb-lg-3">
                     <h2>Contact details</h2>
                 </div>
@@ -67,9 +67,12 @@ get_header();
                     </div> <!-- /map -->
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-5 col-xl-4 mb-2 mb-lg-0">
                 <div class="block-title mb-2">
                     <h2>Have a question?</h2>
+                </div>
+                <div class="contact-form">
+                    <?php echo do_shortcode('[wpforms id="118"]'); ?>
                 </div>
             </div>
         </div>
