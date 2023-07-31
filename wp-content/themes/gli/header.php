@@ -62,7 +62,7 @@
         <?php
         } elseif ($header['value'] == 'header 2') {
         ?>
-            <header class="site-header">
+            <header class="site-header sticky">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
                         <?php
