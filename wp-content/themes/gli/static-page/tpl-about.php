@@ -1,5 +1,5 @@
 <?php
-/* Template Name: About */
+/* Template Name: About Static */
 get_header();
 ?>
 

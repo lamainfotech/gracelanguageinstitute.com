@@ -7,6 +7,10 @@
 
 </main>
 
+<?php
+$social_links = get_field('lit_footer_social_icons', 'option');
+$copyright = get_field('lit_footer_copyright', 'option');
+?>
 <footer class="site-footer">
     <div class="site-footer__top pt-lg-4 pb-lg-3 pt-sm-3 py-2">
         <div class="container">
@@ -45,9 +49,9 @@
                     <div class="site-footer__item site-footer__social text-center text-sm-left">
                         <h3 class="h5">Follow Us</h3>
                         <ul>
-                            <li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+                            <?php foreach( $social_links as $social_link ) : ?>
+                                <li><a href="<?php echo $social_link['lit_social_link']['url']; ?>" target="_blank"><i class="icon-<?php echo $social_link['lit_social_icon']; ?>"></i></a></li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +61,7 @@
     <div class="site-footer__bottom">
         <div class="container">
             <div class="copyright-wrap text-center py-1">
-                <span class="copyright">Copyright © <?php echo date('Y'); ?> Grace Language Institute | Developed by <a href="https://khagendralama.com.np/" target="_blank">Lama InfoTech</a></span>
+                <span class="copyright"><?php echo wpautop($copyright); ?></span>
             </div>
         </div>
     </div>

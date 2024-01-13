@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Sub Courses */
+/* Template Name: Static Sub Courses */
 get_header();
 ?>
 

@@ -37,6 +37,8 @@ class Loader {
 			'LiteConnect\LiteConnect',
 			'Divi\Divi',
 			'Elementor\Elementor',
+			'WPCode\WPCode',
+			'WPCode\RegisterLibrary',
 			'Gutenberg\FormSelector',
 			'WPMailSMTP\Notifications',
 			'WPorg\Translations',
@@ -44,7 +46,7 @@ class Loader {
 			'UncannyAutomator\UncannyAutomator',
 			'UsageTracking\UsageTracking',
 			'DefaultThemes\DefaultThemes',
-			'TranslationsPress\Translations',
+			'Translations\Translations',
 			'DefaultContent\DefaultContent',
 			'PopupMaker\PopupMaker',
 		];
