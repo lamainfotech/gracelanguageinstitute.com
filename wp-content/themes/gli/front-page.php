@@ -25,7 +25,7 @@ if(have_rows('lit_home_sections')) :
                             <div class="col-lg-4 col-md-6 mb-1 mb-sm-2 mb-lg-0">
                                 <div class="card-icon text-center">
                                     <div class="card-icon__top">
-                                        <i class="icon-<?php echo $why_card['lit_card_icon']; ?>"></i>
+                                        <i><img src="<?php echo $why_card['lit_card_icon']['url']; ?>" alt="<?php echo $why_card['lit_card_icon']['alt']; ?>"></i>
                                         <h4><?php echo $why_card['lit_card_title']; ?></h4>
                                         <p><?php echo $why_card['lit_card_text']; ?></p>
                                     </div>
