@@ -42,7 +42,7 @@ $courses_en = new WP_Query(array(
                         <img src="<?php echo site_url(); ?>/wp-content/uploads/nepal-flag.jpg" width="20" height="24" loading="lazy" alt="Nepal Flag">
                     </picture> <!-- /.tab-nav__logo -->
                     <div class="tab-nav__title">
-                        <h6>Nepal</h6>
+                        <h6>Nepali</h6>
                     </div>
                 </div>
             </div> <!--/.slide-item -->
