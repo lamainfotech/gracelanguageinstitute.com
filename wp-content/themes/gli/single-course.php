@@ -54,7 +54,6 @@ if(have_rows('lit_course_details')) :
                                     <div class="card-info">
                                         <div class="card-info__media mb-1 mb-sm-0">
                                             <picture>
-                                                <source srcset="<?php echo site_url(); ?>/wp-content/uploads/angela-smith.jpg" type="image/jpg">
                                                 <img src="<?php echo $instructor['lit_cd_instructor_image']['url']; ?>" width="100" height="100" loading="lazy" alt="<?php echo $instructor['lit_cd_instructor_image']['alt']; ?>">
                                             </picture>
                                         </div> <!-- /.card-info__media -->
