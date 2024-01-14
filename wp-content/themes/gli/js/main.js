@@ -58,18 +58,24 @@ var ss;
 					header.removeClass("sticky");
 				}
 			}
-			jQuery(window).resize(stickyHeader);
-			jQuery(window).scroll(stickyHeader);
+
 			stickyHeader();
 
-			//site-content padding
-			// function siteContentPadding(){
-			// 	var headerHeight = jQuery(".header-top").outerHeight();
-			// 	var mainContent = jQuery(".site-content");
-			// 	mainContent.css("padding-top", headerHeight);
-			// }
-			// siteContentPadding();
-			// jQuery(window).resize(siteContentPadding);
+			function paddingEl() {
+				var header = $(".site-header");
+				var headerHeight = header.innerHeight();
+				var paddingElm = $(".banner");
+				paddingElm.css("padding-top", headerHeight);
+			}
+
+			paddingEl();
+
+			setInterval(function () {
+				paddingEl();
+			}, 100);
+
+			jQuery(window).resize(stickyHeader);
+			jQuery(window).scroll(stickyHeader);
 
 			//dropdown toggle
 			$(".navbar-nav .menu-item-has-children .caret").on(
@@ -101,14 +107,163 @@ var ss;
 			}
 		},
 		misc: function () {
+
 			try {
+
+				/* smooth scroll*/
+				jQuery(function () {
+					$('.smooth-scroll[href*="#"]:not([href="#"])').click(function () {
+						var target = $(this.hash);
+						$('html,body').stop().animate({
+							scrollTop: target.offset().top - 120
+						}, 1000);
+					});
+
+					if (window.location.hash) {
+						scroll(0, 0);
+						setTimeout(function () {
+							scroll(0, 0);
+						}, 1);
+					}
+
+					if (window.location.hash) {
+						$("html, body").animate({
+							scrollTop: $(window.location.hash).offset().top - 120
+						}, 1000);
+					}
+				});
+
+				//accordion active
+				jQuery(".faq-accordion .accordion-title").on("click", (function () {
+					jQuery(this).parents(".accordion-item").toggleClass("active"),
+						jQuery(".faq-accordion .accordion-title").not(this).parents(".accordion-item").removeClass("active")
+				}));
+
 				$('[data-fix="height"]').matchHeight();
+
 			} catch (err) {
 				console.log(err);
 			}
 		},
 		slider: function () {
+			// slider-col-1
+			$(".slider-col-1").slick({
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: true,
+				speed: 800,
+				fade: false,
+			});
 
+			// slider-col-2
+			$(".slider-col-2").slick({
+				dots: true,
+				infinite: false,
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				speed: 800,
+				responsive: [{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						adaptiveHeight: true,
+					},
+				},],
+			});
+
+			// slider-col-3
+			$(".slider-col-3").slick({
+				dots: true,
+				infinite: false,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				speed: 800,
+				responsive: [{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						adaptiveHeight: true,
+					},
+				},
+				],
+			});
+
+			// slider-col-4
+			$(".slider-col-4").slick({
+				dots: true,
+				infinite: false,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				speed: 800,
+				responsive: [{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+					},
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						adaptiveHeight: true,
+					},
+				},
+				],
+			});
+
+			//tab-nav__sliderNav
+			$(".tab-nav__sliderNav").slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				asNavFor: ".tab-nav__sliderMain",
+				speed: 900,
+				focusOnSelect: true,
+				infinite: true,
+				responsive: [{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+					},
+				},
+				{
+					breakpoint: 576,
+					settings: {
+						slidesToShow: 2,
+						adaptiveHeight: true,
+					},
+				},
+				],
+			});
+
+			//tab-nav__sliderMain
+			$(".tab-nav__sliderMain").slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				asNavFor: ".tab-nav__sliderNav",
+				speed: 900,
+				adaptiveHeight: true,
+				infinite: true,
+				draggable: false,
+				swipeToSlide: false,
+				touchMove: false,
+				swipe: false,
+			});
 		},
 		gallery: function () {
 			try {

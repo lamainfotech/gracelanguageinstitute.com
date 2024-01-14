@@ -1,0 +1,190 @@
+// Navigation
+.site-header {
+    .navbar {
+        padding: 0.625rem 0.9375rem;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0.5625rem 0.9375rem 0.5625rem;
+        }
+
+        &-toggler {
+            position: relative;
+            z-index: 100;
+            margin-left: 0.25rem;
+            padding: 5px;
+            border: 0;
+
+            @include media-breakpoint-up(md) {
+                margin-left: 0.5rem;
+            }
+
+            span {
+                display: block;
+                width: 30px;
+                height: 3px;
+                background-color: $primary;
+                transition: all 0.3s ease-in-out;
+
+                &:first-child {
+                    transform: none;
+                }
+
+                &:nth-child(2) {
+                    margin: 6px 0;
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                &:last-child {
+                    transform: none;
+                }
+            }
+
+            &:not(.collapsed) {
+                span {
+                    &:first-child {
+                        transform: translate(3px, 3px) rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        margin: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+
+                    &:last-child {
+                        transform: translate(2px, -3px) rotate(-45deg);
+                    }
+                }
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        &-collapse {
+            @include media-breakpoint-down(md) {
+                position: fixed;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                transform: translateX(-100%);
+                width: 100%;
+                overflow-y: auto;
+                max-width: 17.5rem;
+                transition: all 0.2s;
+                background-color: $white;
+                box-shadow: 0 0 0.625rem rgba($black, 0.3);
+                height: auto !important;
+                z-index: 10000;
+                display: block !important;
+                padding: 3rem 0;
+
+                &.show {
+                    transform: translateX(0);
+                }
+            }
+
+            @include media-breakpoint-down(xs) {
+                max-width: 15.625rem;
+            }
+        }
+
+        &-nav {
+            @include media-breakpoint-up(lg) {
+                align-items: center;
+            }
+
+            .nav {
+                &-item {
+                    line-height: 1;
+
+                    @include media-breakpoint-up(lg) {
+                        margin-right: 1.25rem;
+                        padding: 0.25rem .5rem;
+                    }
+
+                    @include media-breakpoint-up(xxl) {
+                        padding: 0.25rem .75rem;
+                        margin-right: 1.5rem;
+                    }
+
+                    &.active {
+                        .nav-link {
+                            color: $primary;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            .nav-link {
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .nav-link {
+                            color: $primary;
+                        }
+
+                        .caret {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                &-link {
+                    position: relative;
+                    font-weight: 600;
+                    padding: .875rem;
+                    color: $black;
+                    transition: all 0.3s;
+                    @include font-size(1rem);
+                    text-transform: capitalize;
+                    
+                    @include media-breakpoint-up(lg) {
+                        padding: 1rem 0;
+                        @include font-size(1.125rem);
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        border-bottom: 1px solid $primary;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 0;
+                        left: 50%;
+                        right: 50%;
+                        transform: translateX(-50%);
+                        bottom: -14px;
+                        transition: all 0.3s;
+                        display: none;
+                        background-color: $primary;
+
+                        @include media-breakpoint-up(lg) {
+                            display: block;
+                        }
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: $primary;
+
+                        &::before {
+                            width: 100%;
+                        }
+
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

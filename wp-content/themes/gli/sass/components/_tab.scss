@@ -1,0 +1,69 @@
+.tab {
+    &-nav {
+        &__head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+            cursor: pointer;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+
+            @include media-breakpoint-up(sm) {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+
+        &__logo {
+            padding-right: 10px;
+        }
+
+        &__title {
+            h6 {
+                margin-bottom: 0;
+                display: inline-block;
+            }
+        }
+
+        .slick {
+            &-track {
+                align-items: center;
+                justify-content: center;
+
+                .slide {
+
+                    &-item {
+                        padding: 0 8px;
+                        width: fit-content !important;
+
+                        @include media-breakpoint-up(sm) {
+                            padding: 0 1rem;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            padding: 0 1.5rem;
+                        }
+
+                        @include media-breakpoint-up(xl) {
+                            padding: 0 2rem;
+                        }
+                    }
+                }
+            }
+
+            &-current {
+                .tab-nav__head {
+                    border-bottom: 2px solid #221F1F;
+                }
+            }
+        }
+    }
+}

@@ -29,19 +29,13 @@ img {
 }
 
 // Fonts
-// %font-roboto {
-//     font-family: $font-roboto;
-// }
-// .font-roboto {
-//     @extend %font-roboto;
-// }
+%font-montserrat {
+	font-family: $font-montserrat;
+}
 
-// %font-open-sans {
-//     font-family: $font-open-sans;
-// }
-// .font-open-sans {
-//     @extend %font-open-sans;
-// }
+.font-montserrat {
+	@extend %font-montserrat;
+}
 
 // Visibility
 .hide-sm {
@@ -73,11 +67,6 @@ ol {
 		font-weight: $i*100;
 	}
 }
-
-// a:visited {
-// 	color: $primary;
-// }
-
 
 .block {
 	&-width {
@@ -170,6 +159,12 @@ ol {
 			}
 		}
 
+		&-68 {
+			@include media-breakpoint-up(lg) {
+				max-width: 42.5rem;
+			}
+		}
+
 		&-50 {
 			@include media-breakpoint-up(lg) {
 				max-width: 31.25rem;
@@ -238,7 +233,6 @@ ol {
 	}
 }
 
-
 .overlay {
 	position: relative;
 	z-index: 1;
@@ -303,10 +297,15 @@ ol {
 	}
 }
 
+// hidden-title
+.hidden-title {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+}
+
 .bg-gray {
-
 	background-color: $gray-500;
-
 }
 
 .gutter-72 {
@@ -411,5 +410,89 @@ ol {
 			padding: 0 24px;
 		}
 
+	}
+}
+
+.heading {
+	&-secondary {
+		h2 {
+			font-weight: 600;
+			@include font-size(1.5rem);
+
+			@include media-breakpoint-up(sm) {
+				@include font-size(1.75rem);
+			}
+
+			@include media-breakpoint-up(lg) {
+				@include font-size(2.25rem);
+			}
+		}
+	}
+}
+
+.bg-lightGreen {
+	background-color: $light-green-100;
+}
+
+.minHeight {
+	&-420 {
+		min-height: 380px;
+
+		@include media-breakpoint-up(sm) {
+			min-height: 400px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			min-height: 420px;
+		}
+	}
+}
+
+.star-ratings {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 10px;
+	line-height: 1;
+	color: #FFD233;
+	font-size: 1.125rem;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 1.25rem;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		font-size: 1.5rem;
+	}
+
+	li {
+		display: inline-block;
+
+		&:not(:last-child) {
+			padding-right: 2px;
+		}
+	}
+}
+
+.author {
+	&-info {
+		margin-bottom: 12px;
+
+		span {
+			font-size: 14px;
+			line-height: 18px;
+			color: $dark-gray-100;
+		}
+
+		.date {
+			padding-left: 18px;
+
+			@include media-breakpoint-up(sm) {
+				padding-left: 20px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				padding-left: 24px;
+			}
+		}
 	}
 }

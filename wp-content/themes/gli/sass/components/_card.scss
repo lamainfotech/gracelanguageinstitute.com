@@ -1,0 +1,376 @@
+.card {
+
+    //card-icon
+    &-icon {
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 1.25rem 1rem;
+        justify-content: space-between;
+        transition: 0.3s all ease-in-out;
+
+        @include media-breakpoint-up(md) {
+            padding: 1.5rem 1.125rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 2rem 1.25rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            border-radius: 15px;
+            background-color: $light-green-100;
+        }
+
+        &:hover,
+        &:focus {
+            border-radius: 15px;
+            background-color: $light-green-100;
+
+            i {
+                color: $primary;
+                background-color: $white;
+                transform: rotateY(180deg);
+            }
+        }
+
+        &.text-center {
+            i {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &__top {
+            color: $dark-gray-100;
+
+            i {
+                color: $dark-black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 4rem;
+                height: 4rem;
+                padding: .75rem;
+                background-color: $white;
+                margin-bottom: 0.75rem;
+                transition: all 0.3s;
+                border-radius: 50%;
+                @include font-size(3rem);
+                box-shadow: 0px 0px 20px rgba($black, 0.15);
+
+                @include media-breakpoint-up(sm) {
+                    width: 5rem;
+                    height: 5rem;
+                    padding: 1rem;
+                    @include font-size(3.25rem);
+                    margin-bottom: 1rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    width: 5.5rem;
+                    height: 5.5rem;
+                    padding: 1.125rem;
+                    @include font-size(3.5rem);
+                    margin-bottom: 1.25rem;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    width: 6.25rem;
+                    height: 6.25rem;
+                    padding: 1.25rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        h4 {
+            font-weight: 600;
+            color: $dark-black;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0.875rem;
+            }
+        }
+    }
+
+    &-media {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        min-height: 380px;
+        position: relative;
+        z-index: 1;
+        padding: 1rem 2rem .75rem;
+        transition: all 3s ease-in-out;
+
+        @include media-breakpoint-up(sm) {
+            padding: 1.5rem 2.5rem 1rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: 392px;
+            padding: 2rem 3rem 1.125rem;
+        }
+
+        &__body {
+            color: $white;
+            transition: all .3s;
+
+            h3 {
+                color: $white;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(180deg, rgba($black, 0) 41.07%, rgba(34, 31, 31, 0.6) 100%);
+            z-index: -1;
+        }
+
+        &:hover,
+        &:focus {
+
+            &::before {
+                background: linear-gradient(90deg, rgba($black, 0.65) 30%, rgba($primary, 0.35) 100%);
+            }
+        }
+    }
+
+    &-blog {
+        height: 100%;
+        border-width: 0;
+        background: $white;
+        display: flex !important;
+        border-color: transparent;
+        border-radius: .5rem;
+        transition: all .3s ease-in-out;
+
+        &__body {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__content {
+            display: flex;
+            flex: 1 0 0%;
+            flex-direction: column;
+            color: $gray-700;
+            padding: 1rem;
+
+            @include media-breakpoint-up(sm) {
+                padding: 1rem 1.25rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 1.0625rem 1.5rem 1.5rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding: 1.125rem 1.625rem 2.25rem;
+            }
+        }
+
+        &__title {
+
+            h2,
+            h3.h5 {
+                color: $dark-black;
+                font-weight: 600;
+                transition: .3s all ease-in-out;
+            }
+
+            a {
+                &:hover {
+                    text-decoration: none;
+
+                    h3 {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+
+        &__media {
+            flex: 0 0 auto;
+
+            img {
+                width: 100%;
+                border-radius: 8px 8px 0px 0px;
+            }
+        }
+
+        &__category,
+        &__date {
+            line-height: 1.2;
+            font-weight: 400;
+            color: $dark-gray-100;
+            display: inline-block;
+            @include font-size(1rem);
+        }
+
+        &__category {
+            margin-right: .5rem;
+
+            @include media-breakpoint-up(lg) {
+                margin-right: .9375rem;
+            }
+        }
+
+        &--alt {
+            position: relative;
+            transition: all .3s;
+            box-shadow: 0px 0px 20px rgba($black, 0.1);
+
+            .card-blog__content {
+                padding: 1rem;
+
+                @include media-breakpoint-up(sm) {
+                    padding: 1.25rem 1.125rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    padding: 1.5rem 1.25rem;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    padding: 1.875rem 1.375rem;
+                }
+
+                h3 {
+                    color: $dark-gray-100;
+                }
+
+            }
+
+            .card-blog__category {
+                color: $white;
+                margin-right: 0;
+                font-weight: 600;
+                font-size: .75rem;
+                border-radius: 5px;
+                padding: .5rem .75rem;
+                letter-spacing: 0.15rem;
+                text-transform: uppercase;
+                background-color: $primary;
+            }
+
+            .card-blog__head {
+                position: absolute;
+                top: 1rem;
+                left: 1.125rem;
+            }
+
+            .card-blog__title {
+                a {
+                    &:hover {
+                        .card-blog__category {
+                            color: $primary;
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .card-blog__category {
+                    color: $primary;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+
+        @include media-breakpoint-up(sm) {
+            flex-wrap: nowrap;
+            text-align: left;
+        }
+
+        &__media {
+            @include media-breakpoint-up(sm) {
+                padding-right: 16px;
+            }
+
+            picture {
+                display: inline-block;
+            }
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+
+    &-tile {
+        position: relative;
+        padding-left: 2.5rem;
+        margin-bottom: 24px;
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 32px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 48px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 56px;
+        }
+
+        &__icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            i {
+                font-size: 24px;
+                color: $primary;
+            }
+        }
+
+        &__content {
+            h4 {
+                font-size: 16px;
+                font-weight: 600;
+                color: $dark-gray-100;
+            }
+
+            span {
+                display: block;
+                font-weight: 400;
+                padding-top: 16px;
+                line-height: 20px;
+                color: $dark-gray-100;
+
+                a {
+                    font-weight: inherit;
+                    line-height: inherit;
+                    color: $dark-gray-100;
+                    word-wrap: break-word;
+                }
+            }
+        }
+    }
+}

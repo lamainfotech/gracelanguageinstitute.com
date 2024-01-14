@@ -1,0 +1,55 @@
+header.block-title {
+
+    h2 {
+        color: $dark-black;
+        font-weight: 600;
+
+        span {
+            display: block;
+            color: $primary;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            @include font-size(1.125rem);
+
+            @include media-breakpoint-up(sm) {
+                @include font-size(1.25rem);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(1.5rem);
+            }
+
+        }
+
+        br {
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+    }
+
+    &--alt {
+
+        h2,
+        .h6 {
+            color: $dark-black;
+            @include font-size(1.125rem);
+
+            @include media-breakpoint-up(sm) {
+                @include font-size(1.25rem);
+            }
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.5rem);
+            }
+
+            small {
+                display: block;
+                color: $gray-700;
+                line-height: 1.5;
+                @include font-size(.875rem);
+            }
+        }
+    }
+}

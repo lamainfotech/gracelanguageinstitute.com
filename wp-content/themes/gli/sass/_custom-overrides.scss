@@ -9,10 +9,7 @@ $font-path: 'fonts';
 // $font-roboto: 'Roboto', Helvetica, Arial, sans-serif;
 // $font-open-sans: 'Open Sans', Helvetica, Arial, sans-serif;
 
-// $font-name: $font-roboto;
-
-$font-heebo: 'Heebo', sans-serif;
-$font-cursive: 'Shadows Into Light Two', cursive;
+$font-montserrat: 'Montserrat', sans-serif;
 
 //## Custom Overwrides
 // Variables
@@ -22,11 +19,17 @@ $font-cursive: 'Shadows Into Light Two', cursive;
 
 // Color system
 
-$light-gray-100: #E6E6E6;
-$light-gray-200: #AFAFAF;
+$light-yellow-100: #D7DF32;
 
-$moderate-orange: #825432;
-$dark-black: #1D1C21;
+$dark-gray-100: #4E4E4E;
+
+$moderate-green: #96ca56;
+
+$light-green-100: #F2F5EE;
+
+$dark-black: #221F1F;
+
+$dark-orange-100: #6C553D;
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -87,7 +90,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $moderate-orange;
+$primary:       $moderate-green;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -159,24 +162,15 @@ $enable-deprecation-messages:                 true !default;
 $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge((0: 0,
-    1: ($spacer * 1,
-    ),
-    2: ($spacer * 2,
-    ),
-    3: ($spacer * 3,
-    ),
-    4: ($spacer * 4,
-    ),
-    5: ($spacer * 5,
-    ),
-    6: ($spacer * 6,
-    ),
-    7: ($spacer * 7,
-    ),
-    8: ($spacer * 8,
-    ),
-    9: ($spacer * 9,
-    ),
+    1: ($spacer * 1,),
+    2: ($spacer * 2,),
+    3: ($spacer * 3,),
+    4: ($spacer * 4,),
+    5: ($spacer * 5,),
+    6: ($spacer * 6,),
+    7: ($spacer * 7,),
+    8: ($spacer * 8,),
+    9: ($spacer * 9,),
     10: ($spacer * 10,
     ),
   ),
@@ -314,7 +308,7 @@ $embed-responsive-aspect-ratios: join(
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-heebo;
+$font-family-base:            $font-montserrat;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
@@ -330,12 +324,12 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 3.75;
-$h2-font-size:                $font-size-base * 3;
-$h3-font-size:                $font-size-base * 2.5;
-$h4-font-size:                $font-size-base * 2.25;
-$h5-font-size:                $font-size-base * 1.875;
-$h6-font-size:                $font-size-base * 1.5;
+$h1-font-size:                $font-size-base * 2.8125;
+$h2-font-size:                $font-size-base * 2.5;
+$h3-font-size:                $font-size-base * 1.875;
+$h4-font-size:                $font-size-base * 1.625;
+$h5-font-size:                $font-size-base * 1.5;
+$h6-font-size:                $font-size-base * 1.125;
 
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
