@@ -111,8 +111,12 @@
                                     <h2 class="mb-1"><?php echo $cd_banner['lit_cd_banner_title']; ?></h2>
                                     <?php echo wpautop( $cd_banner['lit_cd_banner_content'] ); ?>
                                     <div class="btn-wrap pt-0 pt-md-1 pt-lg-2 pt-xxl-3">
-                                        <a href="<?php echo $cd_banner['lit_cd_banner_button_1']['url']; ?>" class="btn btn-primary"><?php echo $cd_banner['lit_cd_banner_button_1']['title']; ?></a>
-                                        <a href="<?php echo $cd_banner['lit_cd_banner_button_2']['url']; ?>" class="btn btn-link"><?php echo $cd_banner['lit_cd_banner_button_2']['title']; ?></a>
+                                        <?php if(!empty($cd_banner['lit_cd_banner_button_1'])) { ?>
+                                            <a href="<?php echo $cd_banner['lit_cd_banner_button_1']['url']; ?>" class="btn btn-primary"><?php echo $cd_banner['lit_cd_banner_button_1']['title']; ?></a>
+                                        <?php } ?>
+                                        <?php if(!empty($cd_banner['lit_cd_banner_button_2'])) { ?>
+                                            <a href="<?php echo $cd_banner['lit_cd_banner_button_2']['url']; ?>" class="btn btn-link"><?php echo $cd_banner['lit_cd_banner_button_2']['title']; ?></a>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
