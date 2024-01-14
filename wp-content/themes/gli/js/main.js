@@ -44,47 +44,47 @@ var ss;
 				}
 			});
 		},
-		nav: function () {
+		// nav: function () {
 			//sticky header
-			function stickyHeader() {
-				var height = $(window).scrollTop();
-				var header = $(".site-header");
-				var headerTopHeight = $(".header-top").outerHeight();
-				if (height > 60) {
-					header.addClass("sticky");
-					header.css("top", "-" + headerTopHeight + "px");
-				} else {
-					header.css("top", 0);
-					header.removeClass("sticky");
-				}
-			}
+			// function stickyHeader() {
+			// 	var height = $(window).scrollTop();
+			// 	var header = $(".site-header");
+			// 	var headerTopHeight = $(".header-top").outerHeight();
+			// 	if (height > 60) {
+			// 		header.addClass("sticky");
+			// 		header.css("top", "-" + headerTopHeight + "px");
+			// 	} else {
+			// 		header.css("top", 0);
+			// 		header.removeClass("sticky");
+			// 	}
+			// }
 
-			stickyHeader();
+			// stickyHeader();
 
-			function paddingEl() {
-				var header = $(".site-header");
-				var headerHeight = header.innerHeight();
-				var paddingElm = $(".banner");
-				paddingElm.css("padding-top", headerHeight);
-			}
+		// 	function paddingEl() {
+		// 		var header = $(".site-header");
+		// 		var headerHeight = header.innerHeight();
+		// 		var paddingElm = $(".banner");
+		// 		paddingElm.css("padding-top", headerHeight);
+		// 	}
 
-			paddingEl();
+		// 	paddingEl();
 
-			setInterval(function () {
-				paddingEl();
-			}, 100);
+		// 	setInterval(function () {
+		// 		paddingEl();
+		// 	}, 100);
 
-			jQuery(window).resize(stickyHeader);
-			jQuery(window).scroll(stickyHeader);
+		// 	jQuery(window).resize(stickyHeader);
+		// 	jQuery(window).scroll(stickyHeader);
 
-			//dropdown toggle
-			$(".navbar-nav .menu-item-has-children .caret").on(
-				"click",
-				function () {
-					$(this).next(".dropdown-menu").slideToggle();
-				}
-			);
-		},
+		// 	//dropdown toggle
+		// 	$(".navbar-nav .menu-item-has-children .caret").on(
+		// 		"click",
+		// 		function () {
+		// 			$(this).next(".dropdown-menu").slideToggle();
+		// 		}
+		// 	);
+		// },
 		form: function () {
 			try {
 				$('.input-text.qty').each(function () {

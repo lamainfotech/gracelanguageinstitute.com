@@ -29,7 +29,7 @@
         $logo = get_field('lit_header_logo', 'option');
         $cta = get_field('lit_header_cta', 'option');
         ?>
-        <header class="site-header">
+        <header class="site-header sticky">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand" href="/"><img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" height="135" width="135"></a>
