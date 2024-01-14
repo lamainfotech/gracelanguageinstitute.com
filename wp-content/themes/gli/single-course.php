@@ -50,7 +50,7 @@ if(have_rows('lit_course_details')) :
                         <h3 class="mb-1 mb-lg-2"><?php echo $heading; ?></h3>
                         <div class="row">
                             <?php foreach($instructors as $instructor) { ?>
-                                <div class="col-lg-6 mb-1 mb-sm-2 mb-lg-0">
+                                <div class="col-lg-12 mb-1 mb-sm-2 mb-lg-0">
                                     <div class="card-info">
                                         <div class="card-info__media mb-1 mb-sm-0">
                                             <picture>
