@@ -44,7 +44,7 @@ var ss;
 				}
 			});
 		},
-		// nav: function () {
+		nav: function () {
 			//sticky header
 			// function stickyHeader() {
 			// 	var height = $(window).scrollTop();
@@ -78,13 +78,13 @@ var ss;
 		// 	jQuery(window).scroll(stickyHeader);
 
 		// 	//dropdown toggle
-		// 	$(".navbar-nav .menu-item-has-children .caret").on(
-		// 		"click",
-		// 		function () {
-		// 			$(this).next(".dropdown-menu").slideToggle();
-		// 		}
-		// 	);
-		// },
+			$(".navbar-nav .menu-item-has-children .caret").on(
+				"click",
+				function () {
+					$(this).next(".dropdown-menu").slideToggle();
+				}
+			);
+		},
 		form: function () {
 			try {
 				$('.input-text.qty').each(function () {
