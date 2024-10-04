@@ -10,6 +10,7 @@
     z-index: 1;
     min-height: 32.5rem;
     padding-bottom: 2rem;
+    margin-top: 125px;
 
     @include media-breakpoint-up(sm) {
         min-height: 540px;
